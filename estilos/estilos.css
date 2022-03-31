@@ -104,6 +104,14 @@ html {
         "descripcion1 descripcion2 descripcion3"
     ;
 }
+.productos img{
+    height: 150px;
+    transition: height, 2s;
+}
+.productos img:hover{
+    height: 650px;
+}
+
 
 /* producto caja 1*/
 .productoCaja1 {
