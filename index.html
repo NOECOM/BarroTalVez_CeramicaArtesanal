@@ -1,89 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerámica Barro Tal Vez</title>
     <link rel="shortcut icon" href="imagenes/logoBTV.ico" type="image/x-icon" class="logoFavicon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Mi pag de estilos -->
     <link rel="stylesheet" href="estilos/estilos.css">
+
 </head>
 
 <body>
-    <header> 
-        <div class="encabezado">
-            <h1 class="titulo_principal " >Cerámica artesanal</h1>
-            <img src="imagenes/logoBTV.ico" alt="logo de mi empresa" title="Logo de mi empresa" class="header_logo"/>
-        </div>
+    <div class="container-fluid">
 
-        <section>
-            <nav class="navegacion"> 
-                <ul class="menu" >
-                    <li><a href="index.html" name="inicio">Inicio</a></li>
-                    <li><a href="páginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="páginas/tienda.html">Tienda</a></li>
-                    <li><a href="páginas/contacto.html">Contacto</a></li>
-                    <li><a href="páginas/novedades.html">Novedades</a></li>
-                    <li><a href="páginas/giftcard.html">Gift Card</a></li>
+        <header class="miHeader row">
+            <div class="encabezado row col-12">
+                <h1 class="titulo_principal ">Cerámica artesanal</h1>
+                <img src="imagenes/logoBTV.ico" alt="logo de mi empresa" title="Logo de mi empresa"
+                    class="header_logo" />
+            </div>
+
+            <section class="miNav row">
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="index.html" name="inicio">Inicio</a></li>
+                        <li><a href="páginas/nosotros.html">Nosotros</a></li>
+                        <li><a href="páginas/tienda.html">Tienda</a></li>
+                        <li><a href="páginas/contacto.html">Contacto</a></li>
+                        <li><a href="páginas/novedades.html">Novedades</a></li>
+                        <li><a href="páginas/giftcard.html">Gift Card</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main class="mainIndex row col-12">
+            <div class="row col-sm-3 col-md-3">
+                <img src="imagenes/manos_de_barro.png" alt="imagen de manos con barro de ceramica" class="manosBarro" /> 
+            </div>
+            <section class="presentacion col-sm-6 col-md-6">
+                <h3 class="presentacion__titulo">Cerámica artesanal - Barro Tal vez</h3>
+                <h5 class="presentacion__subtitulo">¿Por qué elegirnos?</h5>
+                <p class="presentacion__parrafo">Te invitamos a descubrir nuestros productos artesanales, los cuales se basan en el desarrollo de procesos creativos, diseños y producciones únicas. Mediante diferentes técnicas e innovación de modelos y prototipos, brindamos siempre la mejor calidad de producto y de atención al cliente personalizada.</p>
+            </section>
+
+
+        </main>
+
+        <section class="productos row">
+
+            <article class="productosCaja1 col-sm-12 col-md-4">
+                <img src="imagenes/cazuelaCuadrada.jpeg" alt="imagen de una cazuela cuadrada"
+                    title="imagen de cazuelas cuadradas" class="imagenCazuelaCuadrada" />
+                <h4 class="productosCaja1__título">Cazuelas</h4>
+                <p class="descripcion1">Esta es una breve descripción del producto</p>
+            </article>
+
+            <article class="productosCaja2 col-sm-12 col-md-4">
+                <img src="imagenes/matesConNombre.jpeg" alt="imagen de mates personalizados con nombre"
+                    title="imagen de mates personalizados con nombre" class="imagenMatesPersonalizados" />
+                <h4 class="productosCaja2__título">Mates personalizados</h4>
+                <p class="descripcion2">Esta es una breve descripción del producto</p>
+            </article>
+
+            <article class="productosCaja3 col-sm-12 col-md-4">
+                <img src="imagenes/fuenteOvalda.jpeg" alt="imagen de una fuente ovalada"
+                    title="imagen de una fuente ovalada" class="imagenFuenteOvalada" />
+                <h4 class="productosCaja3__título">Fuente oval</h4>
+                <p class="descripcion3">Esta es una breve descripción del producto</p>
+            </article>
+        </section>
+
+        <section class="finalDePagina">
+            <article class="mapa row col-sm-6 col-md-4">
+                <h3 class="mapaTitulo">Encontranos en el mapa</h3>
+                <label for="mapa" class="mapa__titulo"></label>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.57475623781!2d-58.30566578648093!3d-34.795602284867215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646089318074!5m2!1ses-419!2sar"
+                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+
+            <article class="comentarios row col-sm-6 col-md-4">
+                <h2 class="comentariosTitulo">Comentarios</h2>
+                <textarea name="comentarios" cols="30" rows="10" placeholder="Deja tu comentario"
+                    class="comentariosCaja"></textarea>
+            </article>
+        </section>
+
+        <footer class="pieDePagina row">
+            <div class="col-12">
+                <ul>
+                    <li>Copiright 2022</li>
+                    <li>Desarrollado por Noelia Comatto</li>
                 </ul>
-            </nav>
-        </section>
-    </header>
 
-    <main class="mainIndex" >
-        <section class="presentacion">
-            <h3 class="presentacion__titulo">Cerámica artesanal - Barro Tal vez</h3>
-            <h5 class="presentacion__subtitulo">¿Por qué elegirnos?</h5>
-                <p class="presentacion__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum placeat, magnam aliquam quisquam animi quod asperiores quos. Reprehenderit animi maiores obcaecati ducimus corporis suscipit nulla voluptatem nihil, dolore modi deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur odio quasi magni, repellat doloribus dolores excepturi, molestias optio veritatis vel placeat? Soluta officiis rem eum? Delectus cum laboriosam velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, saepe sit. Aut doloribus necessitatibus, optio vero possimus, ducimus est libero dolor consectetur, dolores labore laborum. Iusto, illum. Commodi, saepe amet!</p>
-        </section>
-    </main>
+                <ul>
+                    <li><a href="https://www.facebook.com/search/top?q=cer%C3%A1mica%20barro%20tal%20vez"></a>Facebook
+                    </li>
+                    <li><a href="https://www.instagram.com/ceramicabarrotalvez/?hl=es-la"></a>Instagram</li>
+                    <li><a href="https://www.youtube.com/watch?v=N2chepbdXiE"></a>YouTube</li>
+                    <li><a href="WhatsApp.com"></a>WhatsApp</li>
+                </ul>
+            </div>
+        </footer>
 
-    <section class="productos">
-        <article class="productosCaja1">
-            <img src="imagenes/cazuelaCuadrada.jpeg"  alt="imagen de una cazuela cuadrada" title="imagen de cazuelas cuadradas" class="imagenCazuelaCuadrada"/>
-            <h4 class= "productosCaja1__título">Cazuelas</h4>
-            <p class="descripcion1">Esta es una breve descripción del producto</p>
-        </article>
+    </div>
 
-        <article class="productosCaja2">
-            <img src="imagenes/matesConNombre.jpeg" alt="imagen de mates personalizados con nombre" title="imagen de mates personalizados con nombre" class="imagenMatesPersonalizados" />
-            <h4 class= "productosCaja2__título">Mates personalizados</h4>
-            <p class="descripcion2">Esta es una breve descripción del producto</p>
-        </article>
-
-        <article class="productosCaja3">
-            <img src="imagenes/fuenteOvalda.jpeg"alt="imagen de una fuente ovalada" title="imagen de una fuente ovalada" class="imagenFuenteOvalada"/>
-            <h4 class="productosCaja3__título">Fuente oval</h4>
-            <p class="descripcion3">Esta es una breve descripción del producto</p>
-        </article>
-    </section>
-
-    <section class="finalDePagina">
-        <article class="mapa">
-            <h3 class="mapaTitulo">Encontranos en el mapa</h3>
-            <label for="mapa" class="mapa__titulo" ></label>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.57475623781!2d-58.30566578648093!3d-34.795602284867215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646089318074!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </article>
-    
-        <article class="comentarios">
-            <h2 class="comentariosTitulo">Comentarios</h2>
-            <textarea name="comentarios" cols="30" rows="10" placeholder="Deja tu comentario" class="comentariosCaja"></textarea>
-        </article>
-    </section>
-
-<footer class="pieDePagina" >
-    <ul>
-        <li>Copiright 2022</li>
-        <li>Desarrollado por Noelia Comatto</li>
-    </ul>
-
-    <ul>    
-        <li><a href="https://www.facebook.com/search/top?q=cer%C3%A1mica%20barro%20tal%20vez"></a>Facebook</li>
-        <li><a href="https://www.instagram.com/ceramicabarrotalvez/?hl=es-la"></a>Instagram</li>
-        <li><a href="https://www.youtube.com/watch?v=N2chepbdXiE"></a>YouTube</li>
-        <li><a href="WhatsApp.com"></a>WhatsApp</li>
-    </ul>
-</footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>
