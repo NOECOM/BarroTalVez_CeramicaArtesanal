@@ -9,7 +9,7 @@ html {
 }
 
 /* INDEX */
-/* encabezado */
+/* encabezado  - TODAS LAS PAGINAS -*/
 .encabezado {
     background-color: black;
     background-size: cover;
@@ -28,10 +28,12 @@ html {
     margin: 5px;
     padding: 8px;
 }
-.miHeader{
+
+.miHeader {
     display: flex;
     justify-content: center;
 }
+
 .header_logo {
     margin: 20px;
     padding: 5px;
@@ -41,23 +43,25 @@ html {
 
 }
 
-/* menú*/
+/* menú - TODAS LAS PAGINAS -*/
 
 .navegacion {
     background-color: rgb(202, 202, 202);
     align-items: center;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
 
-.miNav{
-    margin:10px;
+.miNav {
+    margin: 10px;
     padding: 0px;
 }
-.miMenu{
-    margin:0px;
+
+.miMenu {
+    margin: 0px;
     padding: 0px;
 }
+
 .menu ul {
     list-style-type: none;
 
@@ -77,6 +81,10 @@ html {
 }
 
 /*main*/
+#tramaFondo {
+    background-image: url(../imagenes/patron-ceramica.png);
+    background-repeat: repeat-x, repeat-y;
+}
 
 .mainIndex {
     display: flex;
@@ -84,17 +92,18 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    background-image: linear-gradient(45deg, black, rgb(201, 201, 201),  transparent);
+    background-image: linear-gradient(45deg, black, rgb(201, 201, 201), transparent);
     padding-top: 29px;
     padding-bottom: 53px;
-    margin:0px;
+    margin: 0px;
 }
 
-.manosBarro{
-    display:inline-block;
-    width: 50vw;
-    height: 50vh;
+.manosBarro {
+    display: inline-block;
+    max-width: 230px;
+    max-height: 240px;
 }
+
 .presentacion__titulo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
@@ -116,13 +125,14 @@ html {
     display: flex;
     flex-flow: row;
 }
-.videoNosotros{
+
+.videoNosotros {
     padding: 50px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
-/* sección productos*/
+/* sección productos index*/
 
 .productos {
     display: flex;
@@ -135,21 +145,24 @@ html {
     padding-bottom: 43px;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
-.productos img{
-    display:flex;
+
+.productos img {
+    display: flex;
     justify-content: center;
     margin: 55px;
     padding: 5px;
 }
 
 
-.productos p{
+.productos p {
     display: flex;
     justify-content: flex-start;
-    margin:0px;
+    margin: 0px;
     padding: 25px;
 }
+
 /* producto caja 1*/
 
 
@@ -170,10 +183,12 @@ html {
     color: rgb(165, 76, 2);
     margin: 5px;
 }
-.productos h4{
+
+.productos h4 {
     margin-left: 66px;
     margin-right: 69px;
 }
+
 .productos p {
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -191,7 +206,7 @@ html {
     margin: 5px;
 }
 
-/*tamaño de las imagenes*/
+/*tamaño de las imagenes index*/
 .imagenCazuelaCuadrada {
     max-width: 200px;
     max-height: 300px;
@@ -207,7 +222,7 @@ html {
     max-height: 300px;
 }
 
-/*sección final de página*/
+/*sección final de página index*/
 .finalDePagina {
     display: flex;
     flex-direction: row;
@@ -245,12 +260,14 @@ html {
 
 /*   */
 
-/*footer*/
+/*footer  - TODAS LAS PAGINAS - */
 footer {
     background-color: black;
 }
 
 .pieDePagina ul {
+    margin-top: 22px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -269,18 +286,24 @@ footer {
 
 
 /*      NOSOTROS             */
+.mainNosotros{
+    background-image: url(../imagenes/patron\ blanco.png);
+}
 .quienesSomosTitulo {
-    background-color: none;
+    color: #ffff;
+    background-color: black;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
-    
+
     flex-wrap: wrap;
-    margin:20px;
-    padding:20px;
+    margin-left: 30px;
+    padding: 20px;
 }
 
 .quienesSomosParrafo {
+    color: #ffff;
+    background-color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin: 30px;
@@ -289,55 +312,58 @@ footer {
 }
 
 /*  TIENDA  */
+#bodyTienda {
+    background-image: url(../imagenes/patron-ceramica.png);
+}
+
 .mainProductos {
-    margin: 10px;
-    padding: 5px;
-    justify-content: space-evenly;
-    align-items: stretch;
-    justify-items: center;
-    align-content: stretch;
-    margin: 10px;
-    padding: 5px;
+    display: grid;
+    grid-template-columns: 0.3fr, 0.4fr, 0.5fr;
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mates mates portaespiral"
+        "macetas cazuelas cazuelas"
+        "ceniceros ceniceros chop";
+
 }
 
-.imagen1 {
+.mates {
+    grid-area: mates;
+    align-self: stretch;
+}
+
+.portaespiral {
+    grid-area: portaespiral;
+}
+
+.cazuelas {
+    grid-area: cazuelas;
+    align-self: stretch;
+}
+
+.macetasColor {
+    grid-area: macetas;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+    align-self: center;
 }
 
-.imagen2 {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
-    align-content: center;
+.ceniceros {
+    grid-area: ceniceros;
+    align-self: stretch;
 }
 
-.imagen3 {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    align-content: center;
+.chop {
+    grid-area: chop;
+    align-self: stretch;
 }
 
-.imagen4 {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    align-content: center;
-}
 
 /* CONTACTO*/
 .mainContacto {
-    background-image: url("../imagenes/mondrian.jpg");
+    background-image: url(../imagenes/patron-ceramica.png);
+
 }
 
 .formulario {
@@ -372,48 +398,154 @@ footer {
 }
 
 /*      GIFTCARD       */
+.mainGifcard {
+    
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 26px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo1 tarjeta1"
+        "titulo2 tarjeta2"
+        "titulo3 tarjeta3";
+}
+.cajaProductos{
+    background-color: rgb(228, 227, 227);
+}
+.cajaProductos__titulo1 {
+    grid-area: titulo1;
+    
+}
+.cajaProductos__titulo2 {
+    grid-area: titulo2;
+}
+.cajaProductos__titulo3 {
+    grid-area: titulo3;
+}
+.cajaProductos__tarjeta1 {
+    grid-area: tarjeta1;
+}
+.cajaProductos__tarjeta2 {
+    grid-area: tarjeta2;
+}
+.cajaProductos__tarjeta3 {
+    grid-area: tarjeta3;
+}
 
 .cajaProductos h5 {
-    color: blue;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 15px;
-
+    margin-right: 30px;
+    margin-left: 45px;
 }
 
-.imagen1 {
+.cajaProductos__tarjeta1{
 
     width: 350px;
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
     padding: 10px;
 }
 
-.imagen2 {
+.cajaProductos__tarjeta2 {
 
     width: 350px;
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
     padding: 10px;
 }
 
-.imagen3 {
+.cajaProductos__tarjeta3 {
 
     width: 350px;
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
     padding: 10px;
 }
 
+@media screen and (max-width: 780px) {
+
+    /*  main  */
+    .manosBarro {
+        max-width: 220px;
+        max-height: 232px;
+    }
+
+    .presentacion__titulo {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .presentacion__subtitulo {
+        text-align: start;
+        font-size: 18px;
+    }
+
+    .presentacion__parrafo {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    /*  productos  */
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  xxxxx  */
+}
+
+@media screen and (max-width: 580px) {
+
+    /*  main  */
+    .mainIndex {
+        background-image: linear-gradient(15deg, transparent, rgb(201, 201, 201), black);
+    }
+
+    .manosBarro {
+        max-width: 200px;
+        max-height: 222px;
+    }
+
+    .divMainIndex {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .presentación {
+        margin: 5px;
+    }
+
+    .presentacion__titulo {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .presentacion__subtitulo {
+        text-align: start;
+        font-size: 18px;
+    }
+
+    .presentacion__parrafo {
+        text-align: justify;
+        font-size: 15px;
+        margin: 10px;
+
+    }
+
+    /*  productos  */
+    .productos article {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    /*  xxxxx  */
+}
