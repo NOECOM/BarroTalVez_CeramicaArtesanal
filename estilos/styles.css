@@ -1,0 +1,185 @@
+@charset "UTF-8";
+header section {
+  background-color: black;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  header section h1 {
+    color: beige;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 5px;
+    padding: 8px;
+    display: flex;
+    justify-content: center; }
+  header section img {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 150px;
+    height: 164px;
+    display: inline-block; }
+
+main section article {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: linear-gradient(45deg, black, #c9c9c9, transparent);
+  padding-top: 29px;
+  padding-bottom: 53px;
+  margin: 0px; }
+  main section article img {
+    display: inline-block;
+    width: 230px;
+    height: 240px; }
+
+main section article h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin: 10px;
+  padding: 5px; }
+
+main section article h5 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px; }
+
+main section article p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  flex-flow: row; }
+
+main div section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  margin-top: 11px;
+  margin-bottom: 36px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  main div section article img {
+    display: flex;
+    justify-content: center;
+    margin: 55px;
+    padding: 5px;
+    max-width: 200px;
+    max-height: 300px; }
+  main div section article h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #a54c02;
+    margin: 5px; }
+  main div section article p {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 25px; }
+
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin: 10px; }
+  main section article h3 {
+    font-size: 15px;
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px; }
+  main section article iframe {
+    margin: 30px 15px; }
+  main section article article h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-style: bold; }
+  main section article article textarea {
+    margin: 10px;
+    padding: 15px; }
+
+main {
+  display: grid;
+  grid-template-columns: 0.3fr, 0.4fr, 0.5fr;
+  grid-template-rows: repeat(3, 0.5fr);
+  gap: 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "mates mates portaespiral" "macetas cazuelas cazuelas" "ceniceros ceniceros chop"; }
+  main img {
+    grid-area: mates;
+    align-self: stretch; }
+  main img {
+    grid-area: portaespiral; }
+  main img {
+    grid-area: cazuelas;
+    align-self: stretch; }
+  main img {
+    grid-area: macetas;
+    display: flex;
+    align-self: center; }
+  main img {
+    grid-area: ceniceros;
+    align-self: stretch; }
+  main img {
+    grid-area: chop;
+    align-self: stretch; }
+
+footer {
+  background-color: black;
+  margin: 0px; }
+  footer ul {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    list-style-type: none; }
+  footer li {
+    color: antiquewhite; }
+
+@media screen and (max-width: 580px) {
+  /*  main  */
+  .mainIndex {
+    background-image: linear-gradient(15deg, transparent, #c9c9c9, black); }
+  .manosBarro {
+    max-width: 200px;
+    max-height: 222px; }
+  .divMainIndex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; }
+  .presentación {
+    margin: 5px; }
+  .presentacion__titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px; }
+  .presentacion__subtitulo {
+    text-align: start;
+    font-size: 18px; }
+  .presentacion__parrafo {
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px; }
+  /*  productos  */
+  .productos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /*  xxxxx  */ }

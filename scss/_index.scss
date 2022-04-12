@@ -1,0 +1,109 @@
+main{
+    section {
+        article{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-image: linear-gradient(45deg, black, rgb(201, 201, 201), transparent);
+        padding-top: 29px;
+        padding-bottom: 53px;
+        margin: 0px;
+                img{
+                    display: inline-block;
+                    width: 230px;
+                    height: 240px;
+                }
+            }
+            article{
+                h3{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 25px;
+                    margin: 10px;
+                    padding: 5px;
+                }
+                h5{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 18px;
+                    margin: 5px;
+                    padding: 5px;
+                }
+                p{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    color: black;
+                    font-size: 16px;
+                    display: flex;
+                    flex-flow: row;
+                }
+            }
+        }
+    div{
+        section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        margin-top: 11px;
+        margin-bottom: 36px;
+        padding-top: 43px;
+        padding-bottom: 43px;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        article{
+            img{
+                display: flex;
+                justify-content: center;
+                margin: 55px;
+                padding: 5px;
+                max-width: 200px;
+                max-height: 300px;
+            }
+            h4{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                color: rgb(165, 76, 2);
+                margin: 5px;
+            }
+            p{
+                display: flex;
+                justify-content: flex-start;
+                margin: 0px;
+                padding: 25px;
+            }
+        }
+    }
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        margin: 10px;
+        article{
+            h3{
+                font-size: 15px;
+                font-style: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-bottom: 5px;
+            }
+            iframe{
+                margin: 30px 15px;
+            }
+        article{
+            h2{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15px;
+                font-style: bold;
+            }
+            textarea{
+                margin: 10px;
+                padding: 15px;
+            }
+            }
+        }
+    }
+}
+

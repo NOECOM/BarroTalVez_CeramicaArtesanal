@@ -16,24 +16,22 @@
     </script>
 
     <!-- Mi pag de estilos -->
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/styles.css">
 
 </head>
 
 <body>
     <div class="container-fluid">
-
         <header class="miHeader row">
-            <div class="encabezado row col-12">
+            <section id="bannerHeader">  
                 <h1 class="titulo_principal animate__animated animate__zoomIn">Cerámica artesanal</h1>
-                <img src="imagenes/logoBTV.ico" alt="logo de mi empresa" title="Logo de mi empresa"
-                    class="header_logo" />
-            </div>
-            <section class="navegacion miNav row">
+                <img src="imagenes/logoBTV.ico" alt="logo de mi empresa" title="Logo de mi empresa" class="header_logo" />
+            </section>
+            <section id="barraNav">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="imagenes/logoBTV2.jpg"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -66,62 +64,58 @@
         </header>
 
         <main class="mainIndex row col-12">
-            <div class="divMainIndex row col-sm-6 col-md-4">
-                <img src="imagenes/manos_de_barro.png" alt="imagen de manos con barro de ceramica" class="manosBarro" />
-            </div>
-            <section class="presentacion col-sm-6 col-md-6">
-                <h3 class="presentacion__titulo">Cerámica artesanal - Barro Tal vez</h3>
-                <h5 class="presentacion__subtitulo">¿Por qué elegirnos?</h5>
-                <p class="presentacion__parrafo">Te invitamos a descubrir nuestros productos artesanales, los cuales se
+            <section>
+                <article class="divMainIndex row col-sm-6 col-md-4">
+                    <img src="imagenes/manos_de_barro.png" alt="imagen de manos con barro de ceramica" class="manosBarro" />
+                </article>
+
+                <article class="presentacion col-sm-6 col-md-6">
+                    <h3 class="presentacion__titulo">Cerámica artesanal - Barro Tal vez</h3>
+                    <h5 class="presentacion__subtitulo">¿Por qué elegirnos?</h5>
+                    <p class="presentacion__parrafo">Te invitamos a descubrir nuestros productos artesanales, los cuales se
                     basan en el desarrollo de procesos creativos, diseños y producciones únicas. Mediante diferentes
                     técnicas e innovación de modelos y prototipos, brindamos siempre la mejor calidad de producto y de
                     atención al cliente personalizada.</p>
+                </article>
             </section>
 
+            <div class="tramaFondo">
+                <section class="productos row">
+                    <article class="productosCaja1 col-sm-4 col-md-4">
+                        <img src="imagenes/cazuelaCuadrada.jpeg" alt="imagen de una cazuela cuadrada" title="imagen de cazuelas cuadradas" class="imagenCazuelaCuadrada" />
+                        <h4 class="productosCaja1__título">Cazuelas</h4>
+                        <p class="descripcion1">Esta es una breve descripción del producto</p>
+                    </article>
 
-        </main>
-
-        <div id="tramaFondo">
-            <section class="productos row">
-
-                <article class="productosCaja1 col-sm-4 col-md-4">
-                    <img src="imagenes/cazuelaCuadrada.jpeg" alt="imagen de una cazuela cuadrada"
-                        title="imagen de cazuelas cuadradas" class="imagenCazuelaCuadrada" />
-                    <h4 class="productosCaja1__título">Cazuelas</h4>
-                    <p class="descripcion1">Esta es una breve descripción del producto</p>
-                </article>
-
-                <article class="productosCaja2 col-sm-4 col-md-4">
-                    <img src="imagenes/matesConNombre.jpeg" alt="imagen de mates personalizados con nombre"
+                    <article class="productosCaja2 col-sm-4 col-md-4">
+                        <img src="imagenes/matesConNombre.jpeg" alt="imagen de mates personalizados con nombre"
                         title="imagen de mates personalizados con nombre" class="imagenMatesPersonalizados" />
-                    <h4 class="productosCaja2__título">Mates personalizados</h4>
-                    <p class="descripcion2">Esta es una breve descripción del producto</p>
-                </article>
+                        <h4 class="productosCaja2__título">Mates personalizados</h4>
+                        <p class="descripcion2">Esta es una breve descripción del producto</p>
+                    </article>
 
-                <article class="productosCaja3 col-sm-4 col-md-4">
-                    <img src="imagenes/fuenteOvalda.jpeg" alt="imagen de una fuente ovalada"
+                    <article class="productosCaja3 col-sm-4 col-md-4">
+                        <img src="imagenes/fuenteOvalda.jpeg" alt="imagen de una fuente ovalada"
                         title="imagen de una fuente ovalada" class="imagenFuenteOvalada" />
-                    <h4 class="productosCaja3__título">Fuente oval</h4>
+                        <h4 class="productosCaja3__título">Fuente oval</h4>
                     <p class="descripcion3">Esta es una breve descripción del producto</p>
-                </article>
-            </section>
+                    </article>
+                </section>
+            </div>
 
-            <section class="finalDePagina">
-                <article class="mapa row col-sm-6 col-md-4">
-                    <h3 class="mapaTitulo">Encontranos en el mapa</h3>
-                    <label for="mapa" class="mapa__titulo"></label>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.57475623781!2d-58.30566578648093!3d-34.795602284867215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646089318074!5m2!1ses-419!2sar"
-                        width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </article>
+                <section class="finalDePagina">
+                    <article class="mapa row col-sm-6 col-md-4">
+                        <h3 class="mapaTitulo">Encontranos en el mapa</h3>
+                        <label for="mapa" class="mapa__titulo"></label>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52422.57475623781!2d-58.30566578648093!3d-34.795602284867215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646089318074!5m2!1ses-419!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </article>
 
-                <article class="comentarios row col-sm-6 col-md-4">
-                    <h2 class="comentariosTitulo">Comentarios</h2>
-                    <textarea name="comentarios" cols="30" rows="10" placeholder="Deja tu comentario"
-                        class="comentariosCaja"></textarea>
-                </article>
-            </section>
-        </div>
+                    <article class="comentarios row col-sm-6 col-md-4">
+                        <h2 class="comentariosTitulo">Comentarios</h2>
+                        <textarea name="comentarios" cols="30" rows="10" placeholder="Deja tu comentario" class="comentariosCaja"></textarea>
+                    </article>
+                </section>
+    </main>
 
         <footer class="pieDePagina row">
             <div class="col-12">
@@ -138,6 +132,7 @@
                 </ul>
             </div>
         </footer>
+
 
 
         <!-- Bootstrap -->

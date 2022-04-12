@@ -126,12 +126,6 @@ html {
     flex-flow: row;
 }
 
-.videoNosotros {
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* sección productos index*/
 
 .productos {
@@ -331,32 +325,45 @@ footer {
 
 .mates {
     grid-area: mates;
-    align-self: stretch;
+    justify-content: flex-end;
+    width: 400px;
+    height: 450px;
 }
 
 .portaespiral {
     grid-area: portaespiral;
+    justify-content: flex-end;
+    width: 450px;
+    height: 400px;
 }
 
 .cazuelas {
     grid-area: cazuelas;
-    align-self: stretch;
+    align-items: baseline;
+    width: 500px;
+    height: 500px;
 }
 
 .macetasColor {
     grid-area: macetas;
     display: flex;
     align-self: center;
+    width: 600px;
+    height: 400px;
 }
 
 .ceniceros {
     grid-area: ceniceros;
-    align-self: stretch;
+    align-self: center;
+    width: 450px;
+    height: 400px;
 }
 
 .chop {
     grid-area: chop;
-    align-self: stretch;
+    align-self: center;
+    width: 450px;
+    height: 400px;
 }
 
 
@@ -395,8 +402,14 @@ footer {
 /*   NOVEDADES    */
 .novedadesOfertas__titulo {
     font-size: 50px;
+    display:inline-flex;
+    margin: 20px;
 }
-
+.novedades img{
+    width: 450px;
+    height: 400px;
+    margin: 20px;
+}
 /*      GIFTCARD       */
 .mainGifcard {
     

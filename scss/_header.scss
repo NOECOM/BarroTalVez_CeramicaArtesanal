@@ -1,0 +1,30 @@
+header{
+    section{
+        background-color: black;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+            h1{
+                color: beige;
+                font-size: 30px;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                margin: 5px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+            }
+            img{
+            margin: 20px;
+            padding: 5px;
+            border-radius: 50%;
+            width: 150px;
+            height: 164px;
+            display: inline-block;
+            }
+    }
+}    

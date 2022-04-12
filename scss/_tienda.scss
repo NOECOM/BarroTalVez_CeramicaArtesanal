@@ -1,0 +1,53 @@
+
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 0.3fr, 0.4fr, 0.5fr;
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mates mates portaespiral"
+        "macetas cazuelas cazuelas"
+        "ceniceros ceniceros chop";
+        img {
+            grid-area: mates;
+            align-self: stretch;
+            
+        }
+        
+        img {
+            grid-area: portaespiral;
+        }
+        
+        img {
+            grid-area: cazuelas;
+            align-self: stretch;
+        }
+        
+        img {
+            grid-area: macetas;
+            display: flex;
+            align-self: center;
+        }
+        
+        img {
+            grid-area: ceniceros;
+            align-self: stretch;
+        }
+        
+        img {
+            grid-area: chop;
+            align-self: stretch;
+        }
+        
+
+
+
+}
+
+
+
+
