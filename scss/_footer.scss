@@ -1,25 +1,40 @@
 
 footer {
-    background-image: url(../multimedia/fondos/patronGris.png);
-    background-repeat: repeat-x;
-    margin: 0px;
-    div{
+    background-color: black;
+    .pieDePagina__copyright{
     ul {
+        color: $colorCuatro;
         margin-top: 22px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        font-size: 12px;
+        font-size: $letraGrande/2 ;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         list-style-type: none;
     }
-    li {
+}
+    .pieDePagina__redes{
+        ul {
+            margin-top: 22px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            list-style-type: none;
+        }
+    
+        li {
         a{
         text-decoration: none;
         color: rgb(230, 230, 230);
+        
     }
 }
 }

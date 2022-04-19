@@ -5,3 +5,35 @@ $colorCuatro: white;
 
 $letraGrande: 24px;
 
+.mainIndex{
+    display: flex;
+    flex-direction: column ;
+    h3{
+        font-size: $letraGrande;
+    }
+    h5{
+        font-size: $letraGrande/2;
+    }
+}
+/*   MAPA REDES  */
+$redes:(
+                Facebook: blue,
+                Instagram: Yellow,
+                Pinterest: red,
+                Youtube: violet,
+                whatsapp: green
+            );
+
+            @each $red, $color in $redes{
+                .#{$red}{
+                    background-color: $color;
+                }
+            } 
+
+/*   MAP-GET  */
+
+$estilos1:(
+    color: rgb(96, 65, 168),
+    centro: center,
+    tFuente: 40px,
+);
