@@ -3,6 +3,9 @@
 
 
 main{
+    background-color: #000000;
+    background-image: url(../multimedia/fondos/patronBlanco.png);
+    background-size: cover;
     display: grid;
     grid-template-columns: 0.3fr, 0.4fr, 0.5fr;
     grid-template-rows: repeat(3, 0.5fr);

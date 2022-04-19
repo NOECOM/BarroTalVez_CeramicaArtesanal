@@ -1,7 +1,6 @@
 @charset "UTF-8";
 header section {
-  background-color: black;
-  background-size: cover;
+  background-image: url(../multimedia/fondos/patronGris.png);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -25,92 +24,93 @@ header section {
     height: 164px;
     display: inline-block; }
 
-main section article {
-  display: flex;
+header section nav div {
+  background-color: #aaaaaa;
   align-items: center;
-  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  background-image: linear-gradient(45deg, black, #c9c9c9, transparent);
-  padding-top: 29px;
-  padding-bottom: 53px;
-  margin: 0px; }
-  main section article img {
-    display: inline-block;
-    width: 230px;
-    height: 240px; }
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 100vw; }
+  header section nav div ul {
+    list-style-type: none; }
+    header section nav div ul li {
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      display: inline-block;
+      position: relative;
+      padding: 5px 10px; }
+      header section nav div ul li li:hover {
+        color: #26265f; }
+      header section nav div ul li a {
+        text-decoration: none;
+        color: black; }
 
-main section article h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  margin: 10px;
-  padding: 5px; }
+main {
+  background-image: url(../multimedia/fondos/patron-ceramica.png); }
+  main section article {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg, black, #c9c9c9, transparent);
+    padding-top: 29px;
+    padding-bottom: 53px;
+    margin: 0px; }
+  main section h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px; }
+  main section h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px; }
+  main section p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row; }
 
-main section article h5 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  margin: 5px;
-  padding: 5px; }
-
-main section article p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: black;
-  font-size: 16px;
-  display: flex;
-  flex-flow: row; }
-
-main div section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  justify-items: center;
+section div {
   margin-top: 11px;
   margin-bottom: 36px;
   padding-top: 43px;
   padding-bottom: 43px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row; }
-  main div section article img {
-    display: flex;
-    justify-content: center;
-    margin: 55px;
-    padding: 5px;
-    max-width: 200px;
-    max-height: 300px; }
-  main div section article h4 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: #a54c02;
-    margin: 5px; }
-  main div section article p {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px;
-    padding: 25px; }
 
-main section {
+section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   align-items: stretch;
   margin: 10px; }
-  main section article h3 {
+  section article h3 {
     font-size: 15px;
     font-style: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px; }
-  main section article iframe {
+  section article iframe {
     margin: 30px 15px; }
-  main section article article h2 {
+  section article article h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     font-style: bold; }
-  main section article article textarea {
+  section article article textarea {
     margin: 10px;
     padding: 15px; }
 
 main {
+  background-color: #000000;
+  background-image: url(../multimedia/fondos/patronBlanco.png);
+  background-size: cover;
   display: grid;
   grid-template-columns: 0.3fr, 0.4fr, 0.5fr;
   grid-template-rows: repeat(3, 0.5fr);
@@ -137,9 +137,10 @@ main {
     align-self: stretch; }
 
 footer {
-  background-color: black;
+  background-image: url(../multimedia/fondos/patronGris.png);
+  background-repeat: repeat-x;
   margin: 0px; }
-  footer ul {
+  footer div ul {
     margin-top: 22px;
     margin-bottom: 20px;
     display: flex;
@@ -150,8 +151,9 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     list-style-type: none; }
-  footer li {
-    color: antiquewhite; }
+  footer div li a {
+    text-decoration: none;
+    color: #e6e6e6; }
 
 @media screen and (max-width: 580px) {
   /*  main  */

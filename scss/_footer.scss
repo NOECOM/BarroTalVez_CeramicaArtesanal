@@ -1,7 +1,9 @@
 
 footer {
-    background-color: black;
+    background-image: url(../multimedia/fondos/patronGris.png);
+    background-repeat: repeat-x;
     margin: 0px;
+    div{
     ul {
         margin-top: 22px;
         margin-bottom: 20px;
@@ -15,6 +17,11 @@ footer {
         list-style-type: none;
     }
     li {
-        color: antiquewhite
+        a{
+        text-decoration: none;
+        color: rgb(230, 230, 230);
     }
 }
+}
+}
+

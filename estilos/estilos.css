@@ -256,7 +256,7 @@ html {
 
 /*footer  - TODAS LAS PAGINAS - */
 footer {
-    background-color: black;
+    background-image: url(../multimedia/fondos/patronGris.png);
 }
 
 .pieDePagina ul {
