@@ -219,9 +219,14 @@ main {
 
 footer {
   background-color: black; }
-  footer .mapaSitio li a {
-    text-decoration: none;
-    color: #e6e6e6; }
+  footer .mapaSitio li {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    footer .mapaSitio li a {
+      text-decoration: none;
+      color: #a29bff; }
   footer .pieDePagina__copyright ul {
     color: white;
     margin-top: 22px;

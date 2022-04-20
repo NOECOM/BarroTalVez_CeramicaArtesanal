@@ -3,9 +3,13 @@ footer {
     background-color: black;
     .mapaSitio{
         li {
+            display: inline-block;
+            position: relative;
+            display: flex;
+            justify-content: center;
             a{
             text-decoration: none;
-            color: rgb(230, 230, 230);
+            color: rgb(162, 155, 255);
             }
     }
 }
