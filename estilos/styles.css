@@ -219,6 +219,9 @@ main {
 
 footer {
   background-color: black; }
+  footer .mapaSitio li a {
+    text-decoration: none;
+    color: #e6e6e6; }
   footer .pieDePagina__copyright ul {
     color: white;
     margin-top: 22px;

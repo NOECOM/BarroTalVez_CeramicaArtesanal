@@ -1,6 +1,14 @@
 
 footer {
     background-color: black;
+    .mapaSitio{
+        li {
+            a{
+            text-decoration: none;
+            color: rgb(230, 230, 230);
+            }
+    }
+}
     .pieDePagina__copyright{
     ul {
         color: $colorCuatro;
