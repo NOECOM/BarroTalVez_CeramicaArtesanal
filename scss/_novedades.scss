@@ -1,0 +1,17 @@
+.novedades{
+    h1{
+        font-size: $letraGrande * 4;
+        display: flex;
+        justify-content: center;
+    }
+}
+.carousel{
+    margin: 80px;
+    div{
+        max-width: 600px;
+        max-height: 500px;    
+    img{
+        object-fit: cover;
+    }
+}
+}

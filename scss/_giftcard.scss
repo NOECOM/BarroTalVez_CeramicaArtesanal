@@ -1,0 +1,21 @@
+.mainGiftcard{
+    display:flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    .cajaProductos{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    img{
+        width: 500px;
+        height: 300px;
+    }
+    h5{
+        color: map-get($estilos1, color);
+        @extend .cajaProductos;
+        margin: 15px;
+        margin-top: 20px;
+    }
+}
