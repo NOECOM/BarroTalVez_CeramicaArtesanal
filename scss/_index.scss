@@ -36,20 +36,9 @@
             padding: 5px 200px
                 }
             }
-    
-    .mainCarousel {
-        div{
-            margin-top: 11px;
-            margin-bottom: 36px;
-            padding-top: 43px;
-            padding-bottom: 43px;
-            display:flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            img{
-                object-fit: cover;
-            }
-            }
+
+        .mainCarousel{
+            margin-top: 50px;
         }
         .finalDePagina{
             background-color: $colorCuatro;

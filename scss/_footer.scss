@@ -2,6 +2,7 @@
 footer {
     background-color: black;
     .mapaSitio{
+        margin: 40px 0px;
         li {
             display: inline-block;
             position: relative;
@@ -45,10 +46,10 @@ footer {
         li {
         a{
         text-decoration: none;
-        color: rgb(230, 230, 230);
-        
+        color: map-get($redes, color) ;
+        }
+        }
     }
 }
-}
-}
+
 

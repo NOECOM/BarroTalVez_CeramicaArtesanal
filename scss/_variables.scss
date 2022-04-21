@@ -17,16 +17,16 @@ $letraGrande: 24px;
 }
 /*   MAPA REDES  */
 $redes:(
-                Facebook: blue,
-                Instagram: Yellow,
-                Pinterest: red,
-                Youtube: violet,
+                facebook: blue,
+                instagram: Yellow,
+                pinterest: red,
+                youtube: violet,
                 whatsapp: green
             );
 
             @each $red, $color in $redes{
                 .#{$red}{
-                    background-color: $color;
+                    color: $color;
                 }
             } 
 

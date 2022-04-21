@@ -3,15 +3,17 @@
         font-size: $letraGrande * 4;
         display: flex;
         justify-content: center;
+        color: $colorTres
     }
-}
-.carousel{
-    margin: 80px;
     div{
-        max-width: 600px;
-        max-height: 500px;    
+        text-align: center;
+        margin: 20px;
     img{
-        object-fit: cover;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        margin: 15px 10px;
+        border-radius: 10%;
     }
 }
 }
