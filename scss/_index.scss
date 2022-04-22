@@ -1,6 +1,8 @@
 .mainIndex{
     background-image: url(../multimedia/fondos/patronChico.png);
     background-position: 100%;
+    width: 100vw;
+    height: auto;
     .seccionPrincipal {
         display: flex;
         justify-content: center;

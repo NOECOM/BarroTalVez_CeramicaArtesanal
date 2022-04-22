@@ -79,7 +79,9 @@ h5 {
 
 .mainIndex {
   background-image: url(../multimedia/fondos/patronChico.png);
-  background-position: 100%; }
+  background-position: 100%;
+  width: 100vw;
+  height: auto; }
   .mainIndex .seccionPrincipal {
     display: flex;
     justify-content: center; }
@@ -205,6 +207,11 @@ h5 {
     column-gap: 20px;
     row-gap: 20px;
     border-radius: 50%; }
+
+.mainContacto {
+  background-image: url(../multimedia/fondos/patronLogo.png);
+  padding-top: 40px;
+  padding-bottom: 60px; }
 
 .novedades h1 {
   font-size: 96px;
