@@ -210,8 +210,10 @@ h5 {
 
 .mainContacto {
   background-image: url(../multimedia/fondos/patronLogo.png);
+  background-color: cadetblue, transparent;
   padding-top: 40px;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  margin: 10px 0px; }
 
 .novedades h1 {
   font-size: 96px;
@@ -248,40 +250,27 @@ h5 {
 footer {
   background-color: black; }
   footer .mapaSitio {
-    margin: 40px 0px; }
-    footer .mapaSitio li {
-      display: inline-block;
-      position: relative;
-      display: flex;
-      justify-content: center; }
-      footer .mapaSitio li a {
-        text-decoration: none;
-        color: #a29bff; }
-  footer .pieDePagina__copyright ul {
-    color: white;
-    margin-top: 22px;
-    margin-bottom: 20px;
+    color: red;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
     list-style-type: none; }
-  footer .pieDePagina__redes ul {
-    margin-top: 22px;
-    margin-bottom: 20px;
+  footer .pieDePagina__copyright {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+    color: #ffff; }
+  footer .pieDePagina__redes {
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    list-style-type: none; }
-  footer .pieDePagina__redes li a {
-    text-decoration: none; }
+    flex-wrap: wrap; }
+  footer img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px; }
 
 @media screen and (max-width: 580px) {
   /*  main  */

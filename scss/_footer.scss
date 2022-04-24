@@ -1,55 +1,33 @@
 
 footer {
     background-color: black;
-    .mapaSitio{
-        margin: 40px 0px;
-        li {
-            display: inline-block;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            a{
-            text-decoration: none;
-            color: rgb(162, 155, 255);
-            }
-    }
-}
-    .pieDePagina__copyright{
-    ul {
-        color: $colorCuatro;
-        margin-top: 22px;
-        margin-bottom: 20px;
+        .mapaSitio{
+        color: red;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-evenly;
-        font-size: $letraGrande/2 ;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
+        flex-wrap: nowrap;
+        text-decoration: none;
         list-style-type: none;
     }
-}
+
+    .pieDePagina__copyright{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #ffff;
+    }
+
     .pieDePagina__redes{
-        ul {
-            margin-top: 22px;
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            font-size: 12px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-            list-style-type: none;
-        }
-    
-        li {
-        a{
-        text-decoration: none;
-        color: map-get($redes, color) ;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+        img{
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
         }
     }
-}
-
 
