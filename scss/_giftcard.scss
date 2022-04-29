@@ -13,8 +13,6 @@
         height: 300px;
     }
     h5{
-        color: map-get($estilos1, color);
-        @extend .cajaProductos;
         margin: 15px;
         margin-top: 20px;
     }
