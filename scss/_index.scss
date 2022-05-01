@@ -18,25 +18,38 @@
             padding: 35px;
             }
         h3{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Acme', sans-serif;
             font-size: 25px;
             margin: 10px;
             padding: 5px;
             }
         h5{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Acme', sans-serif;
             font-size: 18px;
             margin: 5px;
             padding: 5px;
             }
         p{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Indie Flower', cursive;
             color: black;
-            font-size: 16px;
+            font-size: 20px;
             display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
             flex-wrap: wrap;
-            margin: 20px;
-            padding: 5px 200px
+            justify-content: center;
+            margin: 5px;
+            padding: 5px 200px;
+
+            span{
+                color: rgb(255, 1, 1);
+                background-color: black;
+                border-bottom-left-radius: 30%;
+                border-top-right-radius: 30%;
+                text-decoration:solid;
+                letter-spacing: 5px;
+            }
                 }
             }
 
@@ -55,7 +68,7 @@
             article{
                 padding: 20px 10px;
                 h2{
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-family: 'Acme', sans-serif;
                     font-size: 25px;
                     font-style: bold;
                     color: rgb(253, 253, 253);

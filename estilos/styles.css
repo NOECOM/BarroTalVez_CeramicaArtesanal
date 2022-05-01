@@ -69,23 +69,34 @@
       margin: 0px;
       padding: 35px; }
     .mainIndex .seccionPrincipal h3 {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: 'Acme', sans-serif;
       font-size: 25px;
       margin: 10px;
       padding: 5px; }
     .mainIndex .seccionPrincipal h5 {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: 'Acme', sans-serif;
       font-size: 18px;
       margin: 5px;
       padding: 5px; }
     .mainIndex .seccionPrincipal p {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: 'Indie Flower', cursive;
       color: black;
-      font-size: 16px;
+      font-size: 20px;
       display: flex;
+      text-align: center;
+      align-items: center;
+      flex-direction: row;
       flex-wrap: wrap;
-      margin: 20px;
+      justify-content: center;
+      margin: 5px;
       padding: 5px 200px; }
+      .mainIndex .seccionPrincipal p span {
+        color: #ff0101;
+        background-color: black;
+        border-bottom-left-radius: 30%;
+        border-top-right-radius: 30%;
+        text-decoration: solid;
+        letter-spacing: 5px; }
   .mainIndex .mainCarousel {
     margin-top: 50px; }
   .mainIndex .finalDePagina {
@@ -99,7 +110,7 @@
     .mainIndex .finalDePagina article {
       padding: 20px 10px; }
       .mainIndex .finalDePagina article h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Acme', sans-serif;
         font-size: 25px;
         font-style: bold;
         color: #fdfdfd;
@@ -136,8 +147,7 @@
     padding: 5px;
     border-radius: 50%;
     width: 150px;
-    height: 164px;
-    display: inline-block; }
+    height: 164px; }
 
 .miHeader section nav div {
   background-color: #aaaaaa;
@@ -169,9 +179,12 @@
   grid-template-columns: 15% 85%; }
   .mainNosotros .letraCancion {
     grid-area: cancion;
+    transform: rotate(270deg);
+    width: 100vw;
+    height: 176vh;
     display: flex;
-    align-items: center;
-    transform: rotate(270deg); }
+    justify-content: space-around;
+    font-family: 'Source Code Pro', monospace; }
   .mainNosotros .fotoPareja {
     grid-area: foto;
     text-align: center; }
@@ -181,29 +194,33 @@
     grid-area: parrafo; }
   .mainNosotros .videoNosotros {
     grid-area: video; }
-  .mainNosotros img {
-    border-bottom-left-radius: 30%;
-    border-top-right-radius: 30%;
-    padding-top: 35px; }
-  .mainNosotros .mainNosotros__quienesSomos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center; }
-    .mainNosotros .mainNosotros__quienesSomos h3 {
-      font-size: 48px;
-      align-self: center;
-      padding: 40px 0px; }
-    .mainNosotros .mainNosotros__quienesSomos p {
-      font-size: 50px;
-      font-family: 'Square Peg', cursive; }
-      .mainNosotros .mainNosotros__quienesSomos p span {
-        color: aliceblue;
-        background-color: brown;
-        border-bottom-left-radius: 30%;
-        border-top-right-radius: 30%; }
-  .mainNosotros .videoNosotros {
-    margin: 30px 0px; }
+
+.mainNosotros img {
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  padding-top: 35px; }
+
+.mainNosotros__quienesSomos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  .mainNosotros__quienesSomos h3 {
+    font-size: 48px;
+    font-family: 'Acme', sans-serif;
+    align-self: center;
+    padding: 40px 0px; }
+  .mainNosotros__quienesSomos p {
+    font-size: 50px;
+    font-family: 'Square Peg', cursive; }
+    .mainNosotros__quienesSomos p span {
+      color: aliceblue;
+      background-color: brown;
+      border-bottom-left-radius: 30%;
+      border-top-right-radius: 30%; }
+
+.videoNosotros {
+  margin: 30px 0px; }
 
 .mainProductos {
   background-color: #ffffff;
@@ -213,7 +230,7 @@
   justify-content: center;
   padding: 34px; }
   .mainProductos h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Square Peg', cursive;
     color: #9c0b0b;
     display: flex;
     justify-content: center;
@@ -303,7 +320,13 @@ footer {
     list-style-type: none; }
   footer a {
     list-style-type: none;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #ffff; }
+  footer .mapaSitio ul li {
+    font-family: 'Square Peg', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 20px; }
   footer .pieDePagina__redes
 ul {
     display: flex;
@@ -320,6 +343,13 @@ ul div img {
         border-radius: 50%;
         width: 45px;
         height: 45px; }
+  footer .pieDePagina__copyright ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+    margin-top: 40px;
+    font-size: 15px; }
 
 @media screen and (max-width: 1006px) {
   .finalDePagina {
