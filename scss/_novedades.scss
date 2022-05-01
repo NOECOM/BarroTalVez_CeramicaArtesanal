@@ -1,9 +1,11 @@
 .novedades{
     h1{
-        font-size: $letraGrande * 4;
+        font-size: $letraNormal * 4;
         display: flex;
         justify-content: center;
-        color: $colorTres
+        color: $colorTres;
+        font-family: 'Fascinate', cursive;
+        margin-top: 20px;
     }
     div{
         text-align: center;

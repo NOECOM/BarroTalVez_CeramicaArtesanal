@@ -1,16 +1,4 @@
-@charset "UTF-8";
-.mainIndex {
-  display: flex;
-  flex-direction: column; }
-  .mainIndex h3 {
-    font-size: 24px; }
-  .mainIndex h5 {
-    font-size: 12px; }
-
-h5 {
-  font-size: 40px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
-
+@import url("https://fonts.googleapis.com/css2? family= Square+Peg & display=swap");
 .miHeader section {
   background-color: black;
   text-align: center;
@@ -59,6 +47,9 @@ h5 {
       .miHeader section nav div ul li a {
         text-decoration: none;
         color: black; }
+
+.miHeader .navbar {
+  padding: 0px; }
 
 .mainIndex {
   background-image: url(../multimedia/fondos/patronChico.png);
@@ -98,7 +89,7 @@ h5 {
   .mainIndex .mainCarousel {
     margin-top: 50px; }
   .mainIndex .finalDePagina {
-    background-color: white;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -110,14 +101,18 @@ h5 {
       .mainIndex .finalDePagina article h2 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 25px;
-        font-style: bold; }
+        font-style: bold;
+        color: #fdfdfd;
+        padding-left: 30px; }
       .mainIndex .finalDePagina article iframe {
         margin: 30px 15px;
-        width: 300px;
-        height: 250px; }
+        width: 400px;
+        height: 400px; }
       .mainIndex .finalDePagina article textarea {
         margin: 10px;
-        padding: 15px; }
+        padding: 15px;
+        width: 400px;
+        height: 400px; }
 
 .miHeader section {
   background-color: black;
@@ -163,13 +158,52 @@ h5 {
       position: relative;
       padding: 5px 10px; }
       .miHeader section nav div ul li li:hover {
-        color: #26265f; }
+        color: #3753ac; }
       .miHeader section nav div ul li a {
         text-decoration: none;
         color: black; }
 
-.mainNosotros h3 {
-  font-size: 48px; }
+.mainNosotros {
+  display: grid;
+  grid-template-areas: "cancion foto " "cancion titulo " "cancion parrafo " "cancion video ";
+  grid-template-columns: 15% 85%; }
+  .mainNosotros .letraCancion {
+    grid-area: cancion;
+    display: flex;
+    align-items: center;
+    transform: rotate(270deg); }
+  .mainNosotros .fotoPareja {
+    grid-area: foto;
+    text-align: center; }
+  .mainNosotros .quienesSomosTitulo {
+    grid-area: titulo; }
+  .mainNosotros .quienesSomosParrafo {
+    grid-area: parrafo; }
+  .mainNosotros .videoNosotros {
+    grid-area: video; }
+  .mainNosotros img {
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    padding-top: 35px; }
+  .mainNosotros .mainNosotros__quienesSomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+    .mainNosotros .mainNosotros__quienesSomos h3 {
+      font-size: 48px;
+      align-self: center;
+      padding: 40px 0px; }
+    .mainNosotros .mainNosotros__quienesSomos p {
+      font-size: 50px;
+      font-family: 'Square Peg', cursive; }
+      .mainNosotros .mainNosotros__quienesSomos p span {
+        color: aliceblue;
+        background-color: brown;
+        border-bottom-left-radius: 30%;
+        border-top-right-radius: 30%; }
+  .mainNosotros .videoNosotros {
+    margin: 30px 0px; }
 
 .mainProductos {
   background-color: #ffffff;
@@ -180,7 +214,7 @@ h5 {
   padding: 34px; }
   .mainProductos h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #a11f1f;
+    color: #9c0b0b;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -233,7 +267,9 @@ h5 {
   font-size: 96px;
   display: flex;
   justify-content: center;
-  color: red; }
+  color: red;
+  font-family: 'Fascinate', cursive;
+  margin-top: 20px; }
 
 .novedades div {
   text-align: center;
@@ -262,53 +298,35 @@ h5 {
 
 footer {
   background-color: black; }
-  footer .mapaSitio {
+  footer ul {
+    text-decoration: none;
+    list-style-type: none; }
+  footer a {
+    list-style-type: none;
+    text-decoration: none; }
+  footer .pieDePagina__redes
+ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap; }
-  footer .pieDePagina__copyright {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #ffff; }
-  footer .pieDePagina__redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap; }
-  footer img {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px; }
+    justify-content: space-evenly; }
+    footer .pieDePagina__redes
+ul div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+      footer .pieDePagina__redes
+ul div img {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px; }
 
-@media screen and (max-width: 580px) {
-  /*  main  */
-  .mainIndex {
-    background-image: linear-gradient(15deg, transparent, #c9c9c9, black); }
-  .manosBarro {
-    max-width: 200px;
-    max-height: 222px; }
-  .divMainIndex {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px; }
-  .presentación {
-    margin: 5px; }
-  .presentacion__titulo {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 10px; }
-  .presentacion__subtitulo {
-    text-align: start;
-    font-size: 18px; }
-  .presentacion__parrafo {
-    text-align: justify;
-    font-size: 15px;
-    margin: 10px; }
-  /*  productos  */
-  .productos article {
+@media screen and (max-width: 1006px) {
+  .finalDePagina {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  /*  xxxxx  */ }
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center; } }
+
+/* estilos de fuente    */

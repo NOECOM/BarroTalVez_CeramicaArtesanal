@@ -2,30 +2,35 @@
 footer {
     background-color: black;
 
-        .mapaSitio{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+            }
 
-    .pieDePagina__copyright{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: #ffff;
-    }
+        a {
+            list-style-type: none;
+            text-decoration: none;
+        }
+    
+        
+    .pieDePagina__redes 
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
 
-    .pieDePagina__redes{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-        img{
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
+        div {
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            img{
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+
+            }
         }
     }
+}
 

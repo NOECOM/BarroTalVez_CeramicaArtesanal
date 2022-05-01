@@ -3,20 +3,7 @@ $colorSecundario: gray;
 $colorTres: red;
 $colorCuatro: white;
 
-$letraGrande: 24px;
+$letraNormal: 24px;
 
-.mainIndex{
-    display: flex;
-    flex-direction: column ;
-    h3{
-        font-size: $letraGrande;
-    }
-    h5{
-        font-size: $letraGrande/2;
-    }
-}
 
-h5{
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
