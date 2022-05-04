@@ -26,11 +26,12 @@
 <body>
     <div class="container-fluid">
         <header class="miHeader row">
-            <section id="bannerHeader">  
+            <section class="bannerHeader">
                 <h1 class="titulo_principal animate__animated animate__zoomIn">Cerámica artesanal</h1>
-                <img src="../multimedia/logoBTV.ico" alt="logo de mi empresa" title="Logo de mi empresa" class="header_logo" />
+                <img src="../multimedia/logoBTV.ico" alt="logo de mi empresa" title="Logo de mi empresa"
+                    class="header_logo" />
             </section>
-            <section id="barraNav">
+            <section class="barraNav">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="../multimedia/logoBTV2.jpg"></a>
@@ -42,7 +43,7 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav menu">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../páginas/nosotros.html">Nosotros</a>
@@ -51,7 +52,7 @@
                                     <a class="nav-link" href="../páginas/tienda.html">Tienda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacto</a>
+                                    <a class="nav-link" href="../páginas/contacto.html">Contacto</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../páginas/novedades.html">Novedades</a>
@@ -112,22 +113,18 @@
         </main>
 
         <footer class="pieDePagina row">
-            <div class="mapaSitio col-12">
+            <section>
+            <article class="mapaSitio col-12">
                 <ul>
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../páginas/nosotros.html">Nosotros</a></li>
                     <li><a href="../páginas/tienda.html">Tienda</a></li>
                     <li><a href="../páginas/novedades.html">Novedades</a></li>
                     <li><a href="../páginas/giftcard.html">GiftCard</a></li>
                     <li><a href="../páginas/contacto.html">Contacto</a></li>
                 </ul>
-            </div>
-            <div class="col-12 pieDePagina__copyright">
-                <ul>
-                    <li>Copyright 2022</li>
-                    <li>Desarrollado por Noelia Comatto</li>
-                </ul>
-            </div>
-            <div class="pieDePagina__redes ">
+            </article>
+            <article class="pieDePagina__redes ">
                 <ul>
                     <div>
                         <!-- facebook -->
@@ -159,7 +156,13 @@
                         <li class="whatsapp"><a href="https://wa.me/c/5491155840379">WhatsApp</a></li>
                     </div>
                 </ul>
-            </div>
+                <div class="col-12 pieDePagina__copyright">
+                    <ul>
+                        <li>Copyright 2022 - Desarrollado por Noelia Comatto</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
         </footer>
     </div>
 

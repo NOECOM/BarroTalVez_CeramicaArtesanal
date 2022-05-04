@@ -1,5 +1,5 @@
 .mainIndex{
-    background-image: url(../multimedia/fondos/patronChico.png);
+    background-image: url(../multimedia/fondos/tazas_blanco.jpg);
     background-repeat: repeat;
     background-position: 100%;
     width: 100vw;
@@ -13,7 +13,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            background-image: linear-gradient(45deg, rgb(88, 88, 88), rgb(206, 194, 194), rgb(247, 240, 240));
+            background-image: linear-gradient(80deg, rgb(158, 133, 112), rgb(184, 163, 147), rgb(216, 194, 181),rgb(184, 163, 147),rgb(158, 133, 112));
             margin: 0px;
             padding: 35px;
             }
@@ -55,6 +55,9 @@
 
         .mainCarousel{
             margin-top: 50px;
+            img{
+                border-radius: 20%;
+            }
         }
         .finalDePagina{
             background-color: transparent;
@@ -78,6 +81,7 @@
                 margin: 30px 15px;
                 width: 400px;
                 height: 400px;
+                border-radius: 5%;
                 }
                 
                 textarea{
@@ -85,6 +89,7 @@
                     padding: 15px;
                     width: 400px;
                     height: 400px;
+                    border-radius: 5%;
                 }
                 }
             }

@@ -1,58 +1,54 @@
-@import url("https://fonts.googleapis.com/css2? family= Square+Peg & display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
 .miHeader section {
-  background-color: black;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
+  background-image: url(../multimedia/fondos/alfarero2.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center; }
   .miHeader section h1 {
-    color: beige;
-    font-size: 30px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 5px;
-    padding: 8px;
-    display: flex;
-    justify-content: center; }
+    color: #522b11;
+    font-size: 35px;
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 45px;
+    padding-top: 30px; }
   .miHeader section img {
-    margin: 20px;
-    padding: 5px;
+    margin: 46px;
+    padding: -25px;
+    padding-left: 43px;
+    padding-bottom: 37px;
     border-radius: 50%;
-    width: 150px;
-    height: 164px;
-    display: inline-block; }
+    width: 181px;
+    height: 215px; }
 
 .miHeader section nav div {
-  background-color: #aaaaaa;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  width: 100vw; }
+  background-color: #9e8570;
+  padding: 0px; }
   .miHeader section nav div ul {
-    list-style-type: none; }
-    .miHeader section nav div ul li {
-      font-size: 18px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      display: inline-block;
-      position: relative;
-      padding: 5px 10px; }
-      .miHeader section nav div ul li li:hover {
-        color: #26265f; }
-      .miHeader section nav div ul li a {
-        text-decoration: none;
-        color: black; }
+    padding: 10px; }
+  .miHeader section nav div li {
+    color: black;
+    font-size: 15px; }
+    .miHeader section nav div li li:hover {
+      background-color: rgba(255, 145, 0, 0.726); }
+
+.miHeader .bannerHeader {
+  margin: 0px;
+  padding: 0px; }
 
 .miHeader .navbar {
+  padding: 0px;
+  margin: 0px; }
+
+.miHeader .barraNav {
   padding: 0px; }
 
 .mainIndex {
-  background-image: url(../multimedia/fondos/patronChico.png);
+  background-image: url(../multimedia/fondos/tazas_blanco.jpg);
   background-repeat: repeat;
   background-position: 100%;
   width: 100vw;
@@ -65,7 +61,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      background-image: linear-gradient(45deg, #585858, #cec2c2, #f7f0f0);
+      background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570);
       margin: 0px;
       padding: 35px; }
     .mainIndex .seccionPrincipal h3 {
@@ -99,6 +95,8 @@
         letter-spacing: 5px; }
   .mainIndex .mainCarousel {
     margin-top: 50px; }
+    .mainIndex .mainCarousel img {
+      border-radius: 20%; }
   .mainIndex .finalDePagina {
     background-color: transparent;
     display: flex;
@@ -118,60 +116,14 @@
       .mainIndex .finalDePagina article iframe {
         margin: 30px 15px;
         width: 400px;
-        height: 400px; }
+        height: 400px;
+        border-radius: 5%; }
       .mainIndex .finalDePagina article textarea {
         margin: 10px;
         padding: 15px;
         width: 400px;
-        height: 400px; }
-
-.miHeader section {
-  background-color: black;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-  .miHeader section h1 {
-    color: beige;
-    font-size: 30px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 5px;
-    padding: 8px;
-    display: flex;
-    justify-content: center; }
-  .miHeader section img {
-    margin: 20px;
-    padding: 5px;
-    border-radius: 50%;
-    width: 150px;
-    height: 164px; }
-
-.miHeader section nav div {
-  background-color: #aaaaaa;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  width: 100vw; }
-  .miHeader section nav div ul {
-    list-style-type: none; }
-    .miHeader section nav div ul li {
-      font-size: 18px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      display: inline-block;
-      position: relative;
-      padding: 5px 10px; }
-      .miHeader section nav div ul li li:hover {
-        color: #3753ac; }
-      .miHeader section nav div ul li a {
-        text-decoration: none;
-        color: black; }
+        height: 400px;
+        border-radius: 5%; }
 
 .mainNosotros {
   display: grid;
@@ -279,6 +231,8 @@
   padding-top: 40px;
   padding-bottom: 60px;
   margin: 10px 0px; }
+  .mainContacto .formulario {
+    background-color: lightyellow; }
 
 .novedades h1 {
   font-size: 96px;
@@ -314,42 +268,62 @@
     margin-top: 20px; }
 
 footer {
-  background-color: black; }
+  background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570); }
   footer ul {
     text-decoration: none;
     list-style-type: none; }
   footer a {
     list-style-type: none;
     text-decoration: none;
-    color: #ffff; }
+    color: black; }
+  footer section {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-areas: "mapasitio redes"; }
+    footer section .mapaSitio {
+      grid-area: mapasitio;
+      display: flex;
+      justify-content: center;
+      padding: 30px; }
+    footer section .pieDePagina__redes {
+      grid-area: redes;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-direction: column; }
   footer .mapaSitio ul li {
     font-family: 'Square Peg', cursive;
     display: flex;
-    justify-content: center;
-    font-size: 20px; }
-  footer .pieDePagina__redes
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    footer .pieDePagina__redes
-ul div {
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-right: 100px; }
+  footer .pieDePagina__redes {
+    padding-left: 100px;
+    padding-right: 200px;
+    padding-top: 70px; }
+    footer .pieDePagina__redes ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      column-gap: 20px; }
+    footer .pieDePagina__redes div {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center; }
-      footer .pieDePagina__redes
-ul div img {
-        border-radius: 50%;
+      footer .pieDePagina__redes div img {
+        background-color: black;
+        border-radius: 10%;
         width: 45px;
         height: 45px; }
   footer .pieDePagina__copyright ul li {
     display: flex;
-    justify-content: center;
     text-align: center;
-    color: #ffff;
-    margin-top: 40px;
-    font-size: 15px; }
+    color: black;
+    margin: 40px 0px;
+    font-size: 18px;
+    font-family: 'Courgette', cursive; }
 
 @media screen and (max-width: 1006px) {
   .finalDePagina {
@@ -358,5 +332,3 @@ ul div img {
     flex-wrap: wrap;
     align-items: center;
     align-content: center; } }
-
-/* estilos de fuente    */

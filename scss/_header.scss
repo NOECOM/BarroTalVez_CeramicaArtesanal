@@ -1,64 +1,51 @@
 .miHeader{
     section{
-        background-color: black;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-            h1{
-                color: beige;
-                font-size: 30px;
-                font-style: italic;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-align: center;
-                margin: 5px;
-                padding: 8px;
-                display: flex;
-                justify-content: center;
-            }
-            img{
-            margin: 20px;
-            padding: 5px;
+        background-image: url(../multimedia/fondos/alfarero2.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position:center;
+        h1{
+            color:rgb(82, 43, 17);
+            font-size: 35px;
+            font-family: 'Source Code Pro', monospace;
+            padding-left: 45px;
+            padding-top: 30px;
+        }
+        img{
+            margin: 46px;
+            padding: -25px;
+            padding-left: 43px;
+            padding-bottom: 37px;
             border-radius: 50%;
-            width: 150px;
-            height: 164px;
-            display: inline-block;
-            }
+            width: 181px;
+            height: 215px;
+        }
     }
-    section{
-        nav{
-            div{
-                background-color: rgb(170, 170, 170);
-                align-items: center;
-                margin: 0px;
-                padding: 0px;
-                display:flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                width: 100vw;
-                    ul {
-                        list-style-type: none;
-                        li {
-                            font-size: 18px;
-                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                            display: inline-block;
-                            position: relative;
-                            padding: 5px 10px;
-                        li:hover{
-                            color:rgb(38, 38, 95);
-                        }
-                            a {
-                                text-decoration: none;
-                                color: black;
-                            }
-                        }
-                    }
+    section nav div{
+        background-color: rgb(158, 133, 112);
+        padding: 0px;
+        ul 
+        {
+            padding: 10px;
+        }
+        li{
+            color:black ;
+            font-size: 15px;
+            li:hover{
+                background-color: rgba(255, 145, 0, 0.726);
             }
         }
-}    
+    }
+    
+    .bannerHeader{
+        margin:0px;
+        padding: 0px;
+}
     .navbar{
+        padding: 0px;
+        margin:0px;
+    }
+    .barraNav{
         padding: 0px;
     }
 }
