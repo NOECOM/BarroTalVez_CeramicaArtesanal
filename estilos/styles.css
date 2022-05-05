@@ -186,34 +186,7 @@ html {
     color: #9c0b0b;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
-    animation-name: tituloTienda;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; }
-
-@keyframes tituloTienda {
-  0% {
-    font-size: 25px; }
-  10% {
-    font-size: 30px; }
-  20% {
-    font-size: 35px; }
-  30% {
-    font-size: 40px; }
-  40% {
-    font-size: 45px; }
-  50% {
-    font-size: 50px; }
-  60% {
-    font-size: 45px; }
-  70% {
-    font-size: 35px; }
-  80% {
-    font-size: 30px; }
-  90% {
-    font-size: 25px; } }
+    margin-bottom: 30px; }
   .mainProductos img {
     background-color: #5e5b5b;
     padding: 5px;
@@ -226,13 +199,40 @@ html {
     padding: 6px; }
 
 .mainContacto {
-  background-image: url(../multimedia/fondos/patronLogo.png);
-  background-color: cadetblue, transparent;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  margin: 10px 0px; }
+  background-image: url(../multimedia/fondos/patronLogo.png); }
   .mainContacto .formulario {
-    background-color: lightyellow; }
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .mainContacto .formulario h1 {
+      background-color: #ac3737;
+      color: #ffff;
+      font-family: 'Square Peg', cursive;
+      border-top-right-radius: 25%;
+      border-bottom-left-radius: 25%;
+      font-size: 24px;
+      text-align: center;
+      padding: 10px;
+      margin-left: 10px; }
+    .mainContacto .formulario .mensajeContacto {
+      margin: 10px 0px 5px 0px; }
+  .mainContacto form {
+    background-color: beige;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    font-size: 18px;
+    font-family: 'Square Peg', cursive; }
+    .mainContacto form label {
+      margin-top: 10px; }
+
+.botones input {
+  margin: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 35px; }
 
 .novedades h1 {
   font-size: 96px;
@@ -240,7 +240,23 @@ html {
   justify-content: center;
   color: red;
   font-family: 'Fascinate', cursive;
-  margin-top: 20px; }
+  margin-top: 20px;
+  animation-name: ofertasTitulo;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes ofertasTitulo {
+  0% {
+    font-size: 90px; }
+  30% {
+    font-size: 80px; }
+  50% {
+    font-size: 70px; }
+  70% {
+    font-size: 80px; }
+  100% {
+    font-size: 96px; } }
 
 .novedades div {
   text-align: center;

@@ -1,10 +1,43 @@
 .mainContacto{
     background-image: url(../multimedia/fondos/patronLogo.png);
-    background-color: cadetblue, transparent;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    margin: 10px 0px;
-    .formulario {
-        background-color: lightyellow;
+    .formulario{
+        h1{
+            background-color: rgb(172, 55, 55);
+            color: #ffff;
+            font-family: 'Square Peg', cursive;;
+            border-top-right-radius: 25%;
+            border-bottom-left-radius: 25%;
+            font-size: $letraNormal;
+            text-align: center;
+            padding: 10px ;
+            margin-left: 10px;
+        }
+        margin-left: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+            .mensajeContacto{
+                margin: 10px 0px 5px 0px;
+            }
     }
+    form {
+        background-color: beige;
+        border-radius: 4%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px ;
+        font-size: 18px;
+        font-family: 'Square Peg', cursive;
+        label{
+            margin-top: 10px;
+        }
+    }
+}
+.botones{
+    input{
+    margin: 20px;
+    padding: 5px;
+    display:flex;
+    justify-content: flex-start;
+    column-gap: 35px;
+}
 }

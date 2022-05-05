@@ -6,6 +6,28 @@
         color: $colorTres;
         font-family: 'Fascinate', cursive;
         margin-top: 20px;
+
+        @keyframes ofertasTitulo {
+            0%{
+                font-size: 90px;
+            }
+            30%{
+                font-size: 80px;
+            }
+            50%{
+                font-size: 70px;
+            }
+            70%{
+                font-size: 80px;
+            }
+            100%{
+                font-size: 96px;
+            }
+        }
+            animation-name: ofertasTitulo;
+            animation-duration: 6s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
     }
     div{
         text-align: center;
