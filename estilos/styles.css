@@ -156,13 +156,16 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 20px; }
   .mainNosotros__quienesSomos h3 {
     font-size: 48px;
     font-family: 'Acme', sans-serif;
     align-self: center;
-    padding: 40px 0px; }
+    display: contents;
+    padding: 10px; }
   .mainNosotros__quienesSomos p {
+    padding: 20px;
     font-size: 50px;
     font-family: 'Square Peg', cursive; }
     .mainNosotros__quienesSomos p span {
@@ -234,54 +237,91 @@ html {
   justify-content: flex-start;
   column-gap: 35px; }
 
-.novedades h1 {
+.novedades .novedadesOfertas__titulo h1 {
   font-size: 96px;
-  display: flex;
-  justify-content: center;
   color: red;
   font-family: 'Fascinate', cursive;
-  margin-top: 20px;
+  position: absolute;
   animation-name: ofertasTitulo;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
 
 @keyframes ofertasTitulo {
   0% {
-    font-size: 90px; }
-  30% {
-    font-size: 80px; }
+    font-size: 96px; }
   50% {
-    font-size: 70px; }
-  70% {
     font-size: 80px; }
   100% {
-    font-size: 96px; } }
+    font-size: 90px; } }
 
 .novedades div {
   text-align: center;
-  margin: 20px; }
+  margin: 25px; }
   .novedades div img {
     display: inline-block;
     width: 300px;
     height: 300px;
-    margin: 15px 10px;
+    margin-top: 130px;
+    margin-left: 20px;
     border-radius: 10%; }
+
+.muestraColor {
+  animation-name: novedadesColor;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+@keyframes novedadesColor {
+  0% {
+    font-size: 90px; }
+  30% {
+    font-size: 80px; }
+  70% {
+    font-size: 80px; }
+  100% {
+    font-size: 96px; } }
+  .muestraColor h3 {
+    font-family: 'Fascinate', cursive;
+    font-size: 48px;
+    text-align: center;
+    color: brown;
+    margin-top: 30px; }
+  .muestraColor img {
+    width: 400px;
+    height: 300px;
+    margin: 80px 10px;
+    border-radius: 10%;
+    transform: rotate(352deg); }
+
+.imgNovedades {
+  margin: 100px; }
 
 .mainGiftcard {
   display: flex;
-  justify-content: center;
-  margin-left: 60px;
-  margin-bottom: 20px; }
-  .mainGiftcard .cajaProductos {
+  flex-direction: column; }
+  .mainGiftcard div {
     display: flex;
-    flex-direction: column; }
-  .mainGiftcard img {
-    width: 500px;
-    height: 300px; }
-  .mainGiftcard h5 {
-    margin: 15px;
-    margin-top: 20px; }
+    flex-direction: row; }
+    .mainGiftcard div h5 {
+      font-size: 48px;
+      font-family: 'Indie Flower';
+      font-style: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0px 10px;
+      padding: 0px 40px; }
+    .mainGiftcard div img {
+      width: 500px;
+      height: 300px;
+      border-radius: 10%;
+      margin: 30px 20px;
+      padding: 10px; }
 
 footer {
   background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570); }
@@ -309,7 +349,7 @@ footer {
       flex-wrap: nowrap;
       flex-direction: column; }
   footer .mapaSitio ul li {
-    font-family: 'Square Peg', cursive;
+    font-family: 'Indie Flower';
     display: flex;
     justify-content: flex-start;
     font-size: 20px;
@@ -329,8 +369,9 @@ footer {
       text-align: center;
       align-items: center; }
       footer .pieDePagina__redes div img {
-        background-color: black;
-        border-radius: 10%;
+        background-color: #f1ecea;
+        border-top-right-radius: 30%;
+        border-bottom-left-radius: 30%;
         width: 45px;
         height: 45px; }
   footer .pieDePagina__copyright ul li {
