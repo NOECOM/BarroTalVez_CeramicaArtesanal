@@ -33,8 +33,6 @@ html {
   .miHeader section nav div li {
     color: black;
     font-size: 15px; }
-    .miHeader section nav div li li:hover {
-      background-color: rgba(255, 145, 0, 0.726); }
 
 .miHeader .bannerHeader {
   margin: 0px;
@@ -55,23 +53,23 @@ html {
   height: auto; }
   .mainIndex .seccionPrincipal {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 20px; }
     .mainIndex .seccionPrincipal article {
       width: 100vw;
       display: flex;
       align-items: center;
       flex-direction: column;
       background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570);
-      margin: 0px;
-      padding: 35px; }
+      padding: 60px; }
     .mainIndex .seccionPrincipal h3 {
-      font-family: 'Acme', sans-serif;
-      font-size: 25px;
+      font-family: 'Indie Flower';
+      font-size: 48px;
       margin: 10px;
       padding: 5px; }
     .mainIndex .seccionPrincipal h5 {
-      font-family: 'Acme', sans-serif;
-      font-size: 18px;
+      font-family: 'Indie Flower';
+      font-size: 34px;
       margin: 5px;
       padding: 5px; }
     .mainIndex .seccionPrincipal p {
@@ -87,7 +85,7 @@ html {
       margin: 5px;
       padding: 5px 200px; }
       .mainIndex .seccionPrincipal p span {
-        color: #ff0101;
+        color: white;
         background-color: black;
         border-bottom-left-radius: 30%;
         border-top-right-radius: 30%;
@@ -126,6 +124,7 @@ html {
         border-radius: 5%; }
 
 .mainNosotros {
+  margin: 15px 0px;
   display: grid;
   grid-template-areas: "cancion foto " "cancion titulo " "cancion parrafo " "cancion video ";
   grid-template-columns: 15% 85%; }
@@ -166,6 +165,7 @@ html {
     padding: 10px; }
   .mainNosotros__quienesSomos p {
     padding: 20px;
+    margin-top: 20px;
     font-size: 50px;
     font-family: 'Square Peg', cursive; }
     .mainNosotros__quienesSomos p span {
@@ -179,17 +179,25 @@ html {
 
 .mainProductos {
   background-color: #ffffff;
-  padding: 60px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 34px; }
+  padding: 34px;
+  margin-bottom: 70px;
+  margin-top: 40px; }
   .mainProductos h2 {
-    font-family: 'Square Peg', cursive;
+    font-family: 'Indie Flower';
+    font-size: 48px;
+    font-weight: bold;
     color: #9c0b0b;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
+  .mainProductos .mainProductos__imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 25px; }
   .mainProductos img {
     background-color: #5e5b5b;
     padding: 5px;
@@ -200,6 +208,17 @@ html {
     border-radius: 50%;
     margin: 5px;
     padding: 6px; }
+  .mainProductos h5 {
+    margin: 17px;
+    padding: 0px 55px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center; }
+  .mainProductos button {
+    margin: 0px 73px;
+    display: inline-block;
+    padding: 5px; }
 
 .mainContacto {
   background-image: url(../multimedia/fondos/patronLogo.png); }
@@ -230,14 +249,21 @@ html {
     .mainContacto form label {
       margin-top: 10px; }
 
-.botones input {
-  margin: 20px;
-  padding: 5px;
+.botones {
   display: flex;
-  justify-content: flex-start;
-  column-gap: 35px; }
+  align-items: center;
+  justify-content: flex-start; }
+  .botones input {
+    margin: 20px;
+    padding: 5px;
+    column-gap: 35px;
+    background-color: brown;
+    color: #ffff;
+    font-size: 12px;
+    border-radius: 10%; }
 
 .novedades .novedadesOfertas__titulo h1 {
+  margin-left: 364px;
   font-size: 96px;
   color: red;
   font-family: 'Fascinate', cursive;
@@ -303,9 +329,41 @@ html {
 .mainGiftcard {
   display: flex;
   flex-direction: column; }
+  .mainGiftcard .mainGiftcard__descripcion {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainGiftcard .mainGiftcard__descripcion span {
+      background-color: brown;
+      color: white;
+      border-bottom-left-radius: 15%;
+      border-top-right-radius: 15%; }
+    .mainGiftcard .mainGiftcard__descripcion h1 {
+      font-family: 'Indie Flower';
+      color: brown;
+      font-size: 48px; }
+    .mainGiftcard .mainGiftcard__descripcion p {
+      font-size: 24px;
+      font-family: 'Courgette', cursive;
+      margin: 50px;
+      padding: 0px 150px;
+      text-align: justify; }
+    .mainGiftcard .mainGiftcard__descripcion button {
+      padding: 5px 10px;
+      background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570);
+      border-radius: 10%;
+      font-size: 15px;
+      font-family: 'Courgette', cursive; }
+      .mainGiftcard .mainGiftcard__descripcion button a {
+        list-style-type: none;
+        text-decoration: none;
+        color: black; }
   .mainGiftcard div {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around; }
     .mainGiftcard div h5 {
       font-size: 48px;
       font-family: 'Indie Flower';
@@ -379,7 +437,7 @@ footer {
     text-align: center;
     color: black;
     margin: 40px 0px;
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Courgette', cursive; }
 
 @media screen and (max-width: 1006px) {

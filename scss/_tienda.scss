@@ -1,19 +1,29 @@
 .mainProductos{
     background-color: #ffffff;
-    padding: 60px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 34px;
+    margin-bottom: 70px;
+    margin-top: 40px;
         h2{
             
-            font-family: 'Square Peg', cursive;
+            font-family: 'Indie Flower';
+            font-size: $titulo;
+            font-weight: bold;
             color:rgb(156, 11, 11);
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
-        img{
+        .mainProductos__imagenes {
+
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            row-gap: 25px;
+        }
+            img{
             background-color: rgb(94, 91, 91);
             padding: 5px;
             width: 250px;
@@ -24,7 +34,21 @@
             margin: 5px;
             padding: 6px;
         }
+        h5{
+            margin: 17px;
+            padding: 0px 55px;
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            align-items: center;
+        }
+        button{
+            margin: 0px 73px;
+            display: inline-block;
+            padding: 5px;
+        }
 }
+
 
 
 

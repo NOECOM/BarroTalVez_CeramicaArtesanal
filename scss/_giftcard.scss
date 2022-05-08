@@ -2,11 +2,51 @@
     display: flex;
     flex-direction: column;
 
+    .mainGiftcard__descripcion{
+        margin: 30px 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            background-color: brown;
+            color: $colorCuatro;
+            border-bottom-left-radius: 15%;
+            border-top-right-radius: 15%;
+        }
+
+        h1{
+            font-family: 'Indie Flower';
+            color: brown;
+            font-size: $titulo;
+        }
+        p{
+            font-size: $letraNormal;
+            font-family: 'Courgette', cursive;
+            margin: 50px;
+            padding: 0px 150px;
+            text-align: justify;
+        }
+        button{
+            padding: 5px 10px ;
+            background-image: linear-gradient(80deg, rgb(158, 133, 112), rgb(184, 163, 147), rgb(216, 194, 181),rgb(184, 163, 147),rgb(158, 133, 112) );
+            border-radius: 10%;
+            font-size: 15px;
+            font-family: 'Courgette', cursive;
+            a{
+                list-style-type: none;
+                text-decoration: none;
+                color:black;
+            }
+        }
+    } 
+
     div{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     h5{
-        font-size:$letraNormal *2 ;
+        font-size:$titulo ;
         font-family: 'Indie Flower';
         font-style: bold;
         display: flex;
@@ -24,4 +64,5 @@
         padding: 10px;
     }
 }
+    
 }

@@ -7,6 +7,7 @@
     .seccionPrincipal {
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
 
         article{
             width: 100vw;
@@ -14,18 +15,17 @@
             align-items: center;
             flex-direction: column;
             background-image: linear-gradient(80deg, rgb(158, 133, 112), rgb(184, 163, 147), rgb(216, 194, 181),rgb(184, 163, 147),rgb(158, 133, 112));
-            margin: 0px;
-            padding: 35px;
+            padding: 60px;
             }
         h3{
-            font-family: 'Acme', sans-serif;
-            font-size: 25px;
+            font-family: 'Indie Flower';
+            font-size: $titulo;
             margin: 10px;
             padding: 5px;
             }
         h5{
-            font-family: 'Acme', sans-serif;
-            font-size: 18px;
+            font-family: 'Indie Flower';
+            font-size: $letraNormal +10;
             margin: 5px;
             padding: 5px;
             }
@@ -43,7 +43,7 @@
             padding: 5px 200px;
 
             span{
-                color: rgb(255, 1, 1);
+                color: $colorCuatro;
                 background-color: black;
                 border-bottom-left-radius: 30%;
                 border-top-right-radius: 30%;

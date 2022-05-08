@@ -33,11 +33,16 @@
     }
 }
 .botones{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     input{
     margin: 20px;
     padding: 5px;
-    display:flex;
-    justify-content: flex-start;
     column-gap: 35px;
+    background-color: brown;
+    color:#ffff;
+    font-size: 12px;
+    border-radius: 10%;
 }
 }
