@@ -10,6 +10,10 @@ html {
   background-size: cover;
   background-repeat: repeat;
   background-position: center; }
+  .miHeader section nav div li {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive; }
   .miHeader section h1 {
     color: #522b11;
     font-size: 35px;
@@ -29,10 +33,12 @@ html {
   background-color: #9e8570;
   padding: 0px; }
   .miHeader section nav div ul {
-    padding: 10px; }
+    padding: 10px;
+    column-gap: 10px; }
   .miHeader section nav div li {
     color: black;
-    font-size: 15px; }
+    font-size: 20px;
+    font-family: 'Indie Flower'; }
 
 .miHeader .bannerHeader {
   margin: 0px;
@@ -99,16 +105,15 @@ html {
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    margin: 40px 0px; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center; }
     .mainIndex .finalDePagina article {
       padding: 20px 10px; }
       .mainIndex .finalDePagina article h2 {
         font-family: 'Acme', sans-serif;
         font-size: 25px;
-        font-style: bold;
         color: #fdfdfd;
         padding-left: 30px; }
       .mainIndex .finalDePagina article iframe {
@@ -123,40 +128,30 @@ html {
         height: 400px;
         border-radius: 5%; }
 
-.mainNosotros {
-  margin: 15px 0px;
-  display: grid;
-  grid-template-areas: "cancion foto " "cancion titulo " "cancion parrafo " "cancion video ";
-  grid-template-columns: 15% 85%; }
-  .mainNosotros .letraCancion {
-    grid-area: cancion;
-    transform: rotate(270deg);
-    width: 100vw;
-    height: 176vh;
+@media screen and (max-width: 921px) {
+  .finalDePagina article {
     display: flex;
-    justify-content: space-around;
-    font-family: 'Source Code Pro', monospace; }
-  .mainNosotros .fotoPareja {
-    grid-area: foto;
-    text-align: center; }
-  .mainNosotros .quienesSomosTitulo {
-    grid-area: titulo; }
-  .mainNosotros .quienesSomosParrafo {
-    grid-area: parrafo; }
-  .mainNosotros .videoNosotros {
-    grid-area: video; }
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .pieDePagina__redes {
+    display: flex;
+    flex-wrap: wrap; } }
 
-.mainNosotros img {
-  border-bottom-left-radius: 30%;
-  border-top-right-radius: 30%;
-  padding-top: 35px; }
+.mainNosotros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0px;
+  padding-bottom: 35px; }
 
 .mainNosotros__quienesSomos {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 20px; }
+  padding: 39px;
+  margin-top: 25px; }
   .mainNosotros__quienesSomos h3 {
     font-size: 48px;
     font-family: 'Acme', sans-serif;
@@ -164,8 +159,8 @@ html {
     display: contents;
     padding: 10px; }
   .mainNosotros__quienesSomos p {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px 93px;
+    margin: 22px;
     font-size: 50px;
     font-family: 'Square Peg', cursive; }
     .mainNosotros__quienesSomos p span {
@@ -174,8 +169,23 @@ html {
       border-bottom-left-radius: 30%;
       border-top-right-radius: 30%; }
 
-.videoNosotros {
-  margin: 30px 0px; }
+.mainNosotros__fotoPareja img {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  padding-left: 330px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 30%; }
+
+.mainNosotros__letraCancion h2 {
+  margin: 30px 0px;
+  font-size: 16px;
+  font-family: 'Source Code Pro', monospace;
+  background-color: black;
+  font-style: oblique;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  color: white; }
 
 .mainProductos {
   background-color: #ffffff;
@@ -382,7 +392,10 @@ html {
       padding: 10px; }
 
 footer {
-  background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570); }
+  background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
   footer ul {
     text-decoration: none;
     list-style-type: none; }
@@ -390,37 +403,25 @@ footer {
     list-style-type: none;
     text-decoration: none;
     color: black; }
-  footer section {
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-areas: "mapasitio redes"; }
-    footer section .mapaSitio {
-      grid-area: mapasitio;
-      display: flex;
-      justify-content: center;
-      padding: 30px; }
-    footer section .pieDePagina__redes {
-      grid-area: redes;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: nowrap;
-      flex-direction: column; }
-  footer .mapaSitio ul li {
-    font-family: 'Indie Flower';
+  footer .mapaSitio {
     display: flex;
-    justify-content: flex-start;
-    font-size: 20px;
-    padding-right: 100px; }
+    flex-direction: column; }
+    footer .mapaSitio ul li {
+      font-family: 'Indie Flower';
+      display: flex;
+      justify-content: flex-start;
+      font-size: 20px;
+      padding-right: 100px; }
   footer .pieDePagina__redes {
-    padding-left: 100px;
-    padding-right: 200px;
-    padding-top: 70px; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
     footer .pieDePagina__redes ul {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      column-gap: 20px; }
+      justify-content: flex-end; }
     footer .pieDePagina__redes div {
       display: flex;
       flex-direction: column;
@@ -439,11 +440,3 @@ footer {
     margin: 40px 0px;
     font-size: 12px;
     font-family: 'Courgette', cursive; }
-
-@media screen and (max-width: 1006px) {
-  .finalDePagina {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center; } }

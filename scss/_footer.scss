@@ -1,55 +1,40 @@
 
 footer {
     background-image: linear-gradient(80deg, rgb(158, 133, 112), rgb(184, 163, 147), rgb(216, 194, 181),rgb(184, 163, 147),rgb(158, 133, 112) );
-        ul {
-            text-decoration: none;
-            list-style-type: none;
-            }
-
-        a {
-            list-style-type: none;
-            text-decoration: none;
-            color: black;
-        }
-        section{
-            display: grid;
-            grid-template-columns: repeat(2,0.5fr);
-            grid-template-areas: 
-            "mapasitio redes";
-            
-            .mapaSitio{
-                grid-area: mapasitio;
-                display: flex;
-                justify-content: center;
-                padding: 30px;
-            }
-            .pieDePagina__redes{
-                grid-area: redes;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: nowrap;
-                flex-direction: column;
-        }
-        }
-        
-    .mapaSitio ul li{
-        font-family:'Indie Flower';
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    ul {
+        text-decoration: none;
+        list-style-type: none;
+    }
+    a {
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
+        .mapaSitio{
         display: flex;
-        justify-content: flex-start;
-        font-size: 20px;
-        padding-right: 100px;
+        flex-direction: column;
+        ul li{
+            font-family:'Indie Flower';
+            display: flex;
+            justify-content: flex-start;
+            font-size: 20px;
+            padding-right: 100px;
+        }
     }
     
     .pieDePagina__redes {
-        padding-left: 100px;
-        padding-right: 200px;
-        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         ul {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            column-gap: 20px;
         }
         div {
             display:flex;

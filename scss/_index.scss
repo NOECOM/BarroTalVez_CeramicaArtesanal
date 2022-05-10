@@ -63,17 +63,16 @@
             background-color: transparent;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: nowrap;
-            align-items: stretch;
-            margin: 40px 0px ;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 30px;
+            align-items: center;
 
             article{
                 padding: 20px 10px;
                 h2{
                     font-family: 'Acme', sans-serif;
                     font-size: 25px;
-                    font-style: bold;
                     color: rgb(253, 253, 253);
                     padding-left: 30px;
                 }
@@ -93,4 +92,21 @@
                 }
                 }
             }
+}
+
+@media screen and (max-width: 921px){
+    .finalDePagina{
+        article{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+    .pieDePagina__redes{
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 458px){
+    
 }

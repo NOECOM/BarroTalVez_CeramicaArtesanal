@@ -1,49 +1,18 @@
 .mainNosotros{
-    margin: 15px 0px;
-    display: grid;
-    grid-template-areas: 
-    "cancion foto "
-    "cancion titulo "
-    "cancion parrafo "
-    "cancion video ";
-    
-    .letraCancion{
-        grid-area: cancion;
-        transform: rotate(270deg);
-        width: 100vw;
-        height: 176vh;
-        display: flex;
-        justify-content: space-around;
-            font-family: 'Source Code Pro', monospace;
-    }
-    .fotoPareja{
-        grid-area: foto;
-        text-align: center;
-    }
-    .quienesSomosTitulo{
-        grid-area: titulo;
-    }
-    .quienesSomosParrafo{
-        grid-area: parrafo;
-    }
-    .videoNosotros{
-        grid-area: video;
-    };
-    grid-template-columns: 15% 85%;
-}
-
-    .mainNosotros img{
-        border-bottom-left-radius: 30%;
-        border-top-right-radius: 30%;
-        padding-top: 35px;
-    }
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0px;
+    padding-bottom: 35px;
+}    
     .mainNosotros__quienesSomos{
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 20px;
+        padding: 39px;
+        margin-top: 25px;
         h3{
             font-size: $titulo;
             font-family: 'Acme', sans-serif;
@@ -52,8 +21,8 @@
             padding: 10px;
         }
         p{
-            padding: 20px;
-            margin-top: 20px;
+            padding: 10px 93px;
+            margin: 22px;
             font-size: 50px;
             font-family: 'Square Peg', cursive;
             span{
@@ -64,7 +33,25 @@
             }
         }
     }
-    .videoNosotros{
-        margin: 30px 0px;
-    }
-
+        .mainNosotros__fotoPareja{
+            img{
+                display: flex;
+                align-items: center;
+                padding-top: 35px;
+                padding-left: 330px;
+                border-bottom-left-radius: 50%;
+                border-top-right-radius: 30%;
+                }
+        }
+        .mainNosotros__letraCancion {
+            h2{
+                margin: 30px 0px;
+                font-size: 16px;
+                font-family: 'Source Code Pro', monospace;
+                background-color: black;
+                font-style: oblique;
+                border-bottom-left-radius: 30%;
+                border-top-right-radius: 30%;
+                color: $colorCuatro;
+                }
+            }
