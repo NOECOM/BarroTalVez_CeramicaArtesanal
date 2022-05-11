@@ -141,8 +141,8 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: 20px 0px;
   padding-bottom: 35px; }
 
 .mainNosotros__quienesSomos {
@@ -154,28 +154,31 @@ html {
   margin-top: 25px; }
   .mainNosotros__quienesSomos h3 {
     font-size: 48px;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Indie Flower';
     align-self: center;
-    display: contents;
-    padding: 10px; }
+    display: contents; }
   .mainNosotros__quienesSomos p {
     padding: 10px 93px;
     margin: 22px;
-    font-size: 50px;
-    font-family: 'Square Peg', cursive; }
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive; }
     .mainNosotros__quienesSomos p span {
       color: aliceblue;
       background-color: brown;
       border-bottom-left-radius: 30%;
       border-top-right-radius: 30%; }
 
-.mainNosotros__fotoPareja img {
+.mainNosotros__fotoPareja {
   display: flex;
-  align-items: center;
-  padding-top: 35px;
-  padding-left: 330px;
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 30%; }
+  justify-content: center; }
+  .mainNosotros__fotoPareja img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding: 100px 100px 20px 100px;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 30%; }
 
 .mainNosotros__letraCancion h2 {
   margin: 30px 0px;
@@ -183,9 +186,11 @@ html {
   font-family: 'Source Code Pro', monospace;
   background-color: black;
   font-style: oblique;
-  border-bottom-left-radius: 30%;
-  border-top-right-radius: 30%;
+  border-radius: 5%;
   color: white; }
+
+.pieDePagina h4 {
+  font-family: 'Square Peg', cursive; }
 
 .mainProductos {
   background-color: #ffffff;

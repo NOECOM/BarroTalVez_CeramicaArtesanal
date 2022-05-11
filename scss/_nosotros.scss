@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: 20px 0px;
     padding-bottom: 35px;
 }    
     .mainNosotros__quienesSomos{
@@ -15,16 +15,15 @@
         margin-top: 25px;
         h3{
             font-size: $titulo;
-            font-family: 'Acme', sans-serif;
+            font-family: 'Indie Flower';
             align-self: center;
             display: contents;
-            padding: 10px;
         }
         p{
             padding: 10px 93px;
             margin: 22px;
-            font-size: 50px;
-            font-family: 'Square Peg', cursive;
+            font-size: 40px;
+            font-family: 'Dancing Script', cursive;
             span{
                 color:aliceblue;
                 background-color: brown;
@@ -34,11 +33,14 @@
         }
     }
         .mainNosotros__fotoPareja{
+            display: flex;
+            justify-content: center;
             img{
                 display: flex;
                 align-items: center;
-                padding-top: 35px;
-                padding-left: 330px;
+                width: 80%;
+                height: auto;
+                padding: 100px 100px 20px 100px;
                 border-bottom-left-radius: 50%;
                 border-top-right-radius: 30%;
                 }
@@ -50,8 +52,10 @@
                 font-family: 'Source Code Pro', monospace;
                 background-color: black;
                 font-style: oblique;
-                border-bottom-left-radius: 30%;
-                border-top-right-radius: 30%;
+                border-radius: 5%;
                 color: $colorCuatro;
                 }
             }
+        .pieDePagina h4{
+            font-family: 'Square Peg', cursive;
+        }
