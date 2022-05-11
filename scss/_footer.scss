@@ -4,9 +4,13 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    h4{
+        font-family: 'Square Peg', cursive;
+    }
     ul {
         text-decoration: none;
         list-style-type: none;
+        padding: 5px 20px;
     }
     a {
         list-style-type: none;
@@ -16,11 +20,13 @@ footer {
         .mapaSitio{
         display: flex;
         flex-direction: column;
+        margin: 40px 0px;
+        padding: 10px 40px;
         ul li{
             font-family:'Indie Flower';
             display: flex;
             justify-content: flex-start;
-            font-size: 20px;
+            font-size: 17px;
             padding-right: 100px;
         }
     }
@@ -31,10 +37,18 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 30px 0px;
+        column-gap: 10px;
         ul {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            flex-wrap: wrap;
+            column-gap: 8px;
+            li{
+                font-family: 'Square Peg', cursive;
+            }
+
         }
         div {
             display:flex;
@@ -42,9 +56,6 @@ footer {
             text-align: center;
             align-items: center;
         img{
-            background-color: rgb(241, 236, 234);
-            border-top-right-radius: 30%;
-            border-bottom-left-radius: 30%;
             width: 45px;
             height: 45px;
             }
@@ -57,7 +68,13 @@ footer {
         color: black;
         margin: 40px 0px;
         font-size: 12px;
-        font-family: 'Courgette', cursive;
+        font-family: 'Square Peg', cursive;
     }
 }
-
+@media screen and (max-width: 768px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
