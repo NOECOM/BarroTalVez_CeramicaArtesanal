@@ -153,14 +153,14 @@ html {
   padding: 39px;
   margin-top: 25px; }
   .mainNosotros__quienesSomos h3 {
-    font-size: 48px;
+    font-size: 4rem;
     font-family: 'Indie Flower';
     align-self: center;
     display: contents; }
   .mainNosotros__quienesSomos p {
     padding: 10px 93px;
     margin: 22px;
-    font-size: 40px;
+    font-size: 3rem;
     font-family: 'Dancing Script', cursive; }
     .mainNosotros__quienesSomos p span {
       color: aliceblue;
@@ -174,7 +174,7 @@ html {
   .mainNosotros__fotoPareja img {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100vw;
     height: auto;
     padding: 100px 100px 20px 100px;
     border-bottom-left-radius: 50%;
@@ -191,6 +191,17 @@ html {
 
 .pieDePagina h4 {
   font-family: 'Square Peg', cursive; }
+
+@media screen and (max-width: 768px) {
+  .mainNosotros__fotoPareja {
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    margin: 0px; }
+  .mainNosotros__quienesSomos p {
+    margin: 0px;
+    padding: 5px;
+    font-size: 2rem; } }
 
 .mainProductos {
   background-color: #ffffff;
@@ -238,7 +249,7 @@ html {
 .mainContacto {
   background-image: url(../multimedia/fondos/patronLogo.png); }
   .mainContacto .formulario {
-    margin-left: 300px;
+    margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 50px; }
     .mainContacto .formulario h1 {

@@ -14,7 +14,7 @@
         padding: 39px;
         margin-top: 25px;
         h3{
-            font-size: $titulo;
+            font-size: 4rem;
             font-family: 'Indie Flower';
             align-self: center;
             display: contents;
@@ -22,7 +22,7 @@
         p{
             padding: 10px 93px;
             margin: 22px;
-            font-size: 40px;
+            font-size: 3rem;
             font-family: 'Dancing Script', cursive;
             span{
                 color:aliceblue;
@@ -38,7 +38,7 @@
             img{
                 display: flex;
                 align-items: center;
-                width: 80%;
+                width: 100vw;
                 height: auto;
                 padding: 100px 100px 20px 100px;
                 border-bottom-left-radius: 50%;
@@ -59,3 +59,18 @@
         .pieDePagina h4{
             font-family: 'Square Peg', cursive;
         }
+@media screen and (max-width: 768px){
+    .mainNosotros__fotoPareja{
+        width: max-content;
+        height: max-content;
+        padding: 10px;
+        margin: 0px;
+    }
+    .mainNosotros__quienesSomos{
+        p{
+            margin: 0px;
+            padding: 5px;
+            font-size: 2rem;
+        }
+    }
+}
