@@ -1,4 +1,15 @@
 .novedades{
+    h4{
+        font-family: 'Square Peg', cursive;
+    }
+    margin:0px;
+    padding:0px;
+    div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .novedadesOfertas__titulo{
     h1{
         margin-left: 50px;

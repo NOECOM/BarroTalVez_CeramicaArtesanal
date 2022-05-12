@@ -277,16 +277,26 @@ html {
     font-size: 12px;
     border-radius: 10%; }
 
-.novedades .novedadesOfertas__titulo h1 {
-  margin-left: 50px;
-  font-size: 96px;
-  color: red;
-  font-family: 'Fascinate', cursive;
-  position: absolute;
-  animation-name: ofertasTitulo;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; }
+.novedades {
+  margin: 0px;
+  padding: 0px; }
+  .novedades h4 {
+    font-family: 'Square Peg', cursive; }
+  .novedades div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .novedades .novedadesOfertas__titulo h1 {
+    margin-left: 50px;
+    font-size: 96px;
+    color: red;
+    font-family: 'Fascinate', cursive;
+    position: absolute;
+    animation-name: ofertasTitulo;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
 
 @keyframes ofertasTitulo {
   0% {
@@ -295,17 +305,16 @@ html {
     font-size: 80px; }
   100% {
     font-size: 90px; } }
-
-.novedades div {
-  text-align: center;
-  margin: 25px; }
-  .novedades div img {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    margin-top: 130px;
-    margin-left: 20px;
-    border-radius: 10%; }
+  .novedades div {
+    text-align: center;
+    margin: 25px; }
+    .novedades div img {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin-top: 130px;
+      margin-left: 20px;
+      border-radius: 10%; }
 
 .muestraColor {
   animation-name: novedadesColor;
@@ -345,56 +354,70 @@ html {
   display: flex;
   flex-direction: column; }
   .mainGiftcard .mainGiftcard__descripcion {
+    background-image: url(../multimedia/fondos/patronBlanco.png);
     margin: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .mainGiftcard .mainGiftcard__descripcion span {
-      background-color: brown;
-      color: white;
-      border-bottom-left-radius: 15%;
-      border-top-right-radius: 15%; }
-    .mainGiftcard .mainGiftcard__descripcion h1 {
-      font-family: 'Indie Flower';
-      color: brown;
-      font-size: 48px; }
-    .mainGiftcard .mainGiftcard__descripcion p {
+    .mainGiftcard .mainGiftcard__descripcion .mainGiftcard__parrafo {
+      background-color: lightyellow;
+      text-align: center;
       font-size: 24px;
       font-family: 'Courgette', cursive;
       margin: 50px;
-      padding: 0px 150px;
-      text-align: justify; }
+      padding: 20px 150px; }
+      .mainGiftcard .mainGiftcard__descripcion .mainGiftcard__parrafo span {
+        background-color: brown;
+        color: white;
+        border-bottom-left-radius: 15%;
+        border-top-right-radius: 15%; }
+    .mainGiftcard .mainGiftcard__descripcion h1 {
+      background-color: lightyellow;
+      padding: 25px 5px;
+      font-family: 'Indie Flower';
+      color: brown;
+      font-size: 48px; }
     .mainGiftcard .mainGiftcard__descripcion button {
-      padding: 5px 10px;
-      background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570);
-      border-radius: 10%;
-      font-size: 15px;
-      font-family: 'Courgette', cursive; }
+      background-image: linear-gradient(160deg, #9e8570, #b8a393, brown);
+      padding: 15px; }
       .mainGiftcard .mainGiftcard__descripcion button a {
         list-style-type: none;
         text-decoration: none;
-        color: black; }
-  .mainGiftcard div {
+        color: black;
+        font-size: 12px; }
+  .mainGiftcard .cajaProductos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+  .mainGiftcard h5 {
+    font-size: 48px;
+    font-family: 'Indie Flower';
+    font-style: bold;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
-    .mainGiftcard div h5 {
-      font-size: 48px;
-      font-family: 'Indie Flower';
-      font-style: bold;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 0px 10px;
-      padding: 0px 40px; }
-    .mainGiftcard div img {
-      width: 500px;
-      height: 300px;
-      border-radius: 10%;
-      margin: 30px 20px;
-      padding: 10px; }
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 0px 40px; }
+  .mainGiftcard img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 30px 20px;
+    padding: 10px; }
+
+.cajaProductos1 {
+  display: contents; }
+
+.cajaProductos2 {
+  display: contents; }
+
+.cajaProductos3 {
+  display: contents; }
 
 footer {
   background-image: linear-gradient(80deg, #9e8570, #b8a393, #d8c2b5, #b8a393, #9e8570);
@@ -414,6 +437,7 @@ footer {
   footer .mapaSitio {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 40px 0px;
     padding: 10px 40px; }
     footer .mapaSitio ul li {
@@ -455,7 +479,7 @@ footer {
     font-family: 'Square Peg', cursive; }
 
 @media screen and (max-width: 768px) {
-  footer {
+  .mapaSitio {
     display: flex;
     flex-direction: column;
     justify-content: center; } }

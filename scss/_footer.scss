@@ -20,6 +20,7 @@ footer {
         .mapaSitio{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         margin: 40px 0px;
         padding: 10px 40px;
         ul li{
@@ -71,8 +72,8 @@ footer {
         font-family: 'Square Peg', cursive;
     }
 }
-@media screen and (max-width: 768px){
-    footer{
+@media screen and (max-width: 768px) {
+    .mapaSitio{
         display: flex;
         flex-direction: column;
         justify-content: center;
